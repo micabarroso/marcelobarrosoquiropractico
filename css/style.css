@@ -1,0 +1,43 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.encabezado{
+    position: fixed;
+    background-color: #1c1c1c;
+    padding: 20px;
+    width: 100%;
+    display: flex;              
+    justify-content: space-between;
+    align-items: center; 
+}
+
+
+main {
+    background-color: #eeede9;
+    font-family: sans-serif;
+}
+
+h2{
+    font-family: "Roboto", sans-serif;
+}
+
+h3{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+}
+footer {
+    background-color: #1c1c1c;
+    padding: 20px;
+    width: 100%
+}
+
+.BannerIndex{
+    width: 100%;
+}
+
+.sectionBannerIndex {
+    padding: 10px;
+}
