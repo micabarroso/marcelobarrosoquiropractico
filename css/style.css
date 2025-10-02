@@ -4,40 +4,118 @@
     padding: 0;
 }
 
-.encabezado{
-    position: fixed;
+header {
     background-color: #1c1c1c;
     padding: 20px;
-    width: 100%;
-    display: flex;              
-    justify-content: space-between;
-    align-items: center; 
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-family: "Roboto"
+}
+
+header a {
+    color: #eeede9;
+    text-decoration: none;
+}
+
+
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+
+}
+
+header nav ul li {
+    padding: 0 20px;
 }
 
 
 main {
     background-color: #eeede9;
     font-family: sans-serif;
+    padding: 20px;
+}
+
+
+.formulario {
+    padding: 20 50 20 50;
 }
 
 h2{
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto";
+    font-weight: 900;
+    font-size: 3rem;
+    color: #1c1c1c;
+    text-decoration-line: underline;
+    text-decoration-color: #d88c21;
+    text-decoration-thickness:3px;
 }
 
 h3{
-    font-family: "Montserrat", sans-serif;
+    font-family: serif;
     font-weight: 800;
+    font-size: 2rem;
 }
-footer {
-    background-color: #1c1c1c;
+
+h4 {
+    font-family: "Montserrat";
+    font-weight: 700;
+    color: #4e4e4e;
+}
+
+p{
+    font-family: "Montserrat";
+    font-weight: 500;
+    color: #1c1c1c;
+}
+
+footer p {
+    color: white;
+}
+.piepagina {
+display: flex;
+background-color: #1c1c1c;
+color: white;
+padding: 20px;
+flex-direction: column;
+}
+
+footer img {
     padding: 20px;
-    width: 100%
+    text-decoration: none
+    
+}
+
+.footer-links {
+flex-direction: row;
+justify-content: space-between;
+
+}
+
+footer a {
+    text-decoration:none
+    
 }
 
 .BannerIndex{
     width: 100%;
 }
 
-.sectionBannerIndex {
-    padding: 10px;
+
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+  gap: 20px; /* espacio entre cards */
+  max-width: 800px;
+  margin: auto;
 }
+
+.card {    
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+}
+
