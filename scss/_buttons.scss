@@ -1,0 +1,31 @@
+//boton primario
+
+.btn-primary {
+    @include button-base(
+        $bg: $color-amarillo,
+        $color: $color-negro,
+        $hover-bg:$color-blanco,
+        $width: 12rem,   
+        $height: 3rem,   
+        $radius: 9999px,  
+        $font-family: $font-titulo,
+        $font-size:1rem
+    );
+}
+
+
+//boton secundario
+
+.btn-secondary {
+    @include button-base(
+        $bg: $color-gris,
+        $color:$color-blanco,
+        $hover-bg:$color-negro,
+        $width: 12rem,   
+        $height: 3rem,   
+        $radius: 9999px,  
+        $font-family: $font-primary,
+        $font-size:1rem
+    );
+}
+
