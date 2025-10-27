@@ -1,0 +1,52 @@
+body{
+    font-family: 'Roboto';
+    line-height: 1.6;
+
+    header{
+        background-color: $color-negro;
+        color: $color-blanco;
+        padding: 1rem 0;
+        position:fixed;
+        width:100%;
+        z-index: 1000;
+        nav{
+            max-width: 1200px;
+            margin: 0;
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+            div{
+                h1{
+                    .logo{
+                        font-size: 1.8rem;
+                        color: $color-blanco;
+                    }
+                }
+
+            }
+            ul{
+                .nav-links{
+                    display: flex;
+                    list-style: none;
+
+                }
+                li{
+                    a{
+                        .nav-links{
+                            color:$color-blanco;
+                            text-decoration: none;
+                            padding: .5rem 1rem;
+                            &:hover{
+                                color: $color-amarillo;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+
