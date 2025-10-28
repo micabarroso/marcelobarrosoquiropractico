@@ -27,7 +27,7 @@ body header nav ul {
   list-style: none;
 }
 body header nav ul li a.nav-links {
-  color: #eeede9;
+  color: #eeede9 !important;
   text-decoration: none;
   list-style: none;
   padding: 0.5rem 1rem;
