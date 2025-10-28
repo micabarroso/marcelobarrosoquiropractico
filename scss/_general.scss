@@ -33,7 +33,7 @@ body{
             
                 li{
                     a.nav-links{
-                        color: $color-blanco;
+                        color: $color-blanco !important;
                         text-decoration: none;
                         list-style: none;
                         padding: .5rem 1rem;
