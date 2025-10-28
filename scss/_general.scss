@@ -17,11 +17,12 @@ body{
             align-items: center;
             padding: 0 2rem;
             div{
-                h1{
-                    .logo{
-                        font-size: 1.8rem;
-                        color: $color-blanco;
-                    }
+                h1.logo{
+                    
+                    font-family: 'MonteCarlo' !important;
+                    font-size: 2rem;
+                    color: $color-blanco;
+                    
                 }
 
             }
@@ -29,6 +30,8 @@ body{
             
                 display: flex;
                 list-style: none;
+                margin-top: 0;
+                margin-bottom: 0;
 
             
                 li{
@@ -39,7 +42,7 @@ body{
                         padding: .5rem 1rem;
 
                         &:hover {
-                        color: $color-amarillo;
+                        color: $color-amarillo !important;
                         }
                     }
                 }

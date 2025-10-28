@@ -1,0 +1,27 @@
+body{
+    main{
+        section.banner {
+            height: 100vh;
+            background: url(../assets/Banner\ en\ los\ medios.jpg) center/cover;
+            display: flex;
+            align-items: center;
+            justify-items: center;
+            justify-content: center;
+            text-align: center;
+            color: $color-blanco;
+
+            div{
+                h2.banner-content{
+                    font-size: 3rem;
+                    margin-bottom: 1rem;
+                }
+                p.banner-content {
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                }
+
+            }
+
+        }
+    }
+}
