@@ -36,6 +36,7 @@ body{
                         .nav-links{
                             color:$color-blanco;
                             text-decoration: none;
+                            list-style: none;
                             padding: .5rem 1rem;
                             &:hover{
                                 color: $color-amarillo;

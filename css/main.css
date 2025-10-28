@@ -29,6 +29,7 @@ body header nav ul .nav-links {
 body header nav ul li a .nav-links {
   color: #eeede9;
   text-decoration: none;
+  list-style: none;
   padding: 0.5rem 1rem;
 }
 body header nav ul li a .nav-links:hover {
