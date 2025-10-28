@@ -26,13 +26,13 @@ body header nav ul .nav-links {
   display: flex;
   list-style: none;
 }
-body header nav ul li a .nav-links {
+body header nav ul li a.nav-links {
   color: #eeede9;
   text-decoration: none;
   list-style: none;
   padding: 0.5rem 1rem;
 }
-body header nav ul li a .nav-links:hover {
+body header nav ul li a.nav-links:hover {
   color: #d88c21;
 }
 
