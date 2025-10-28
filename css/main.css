@@ -85,12 +85,19 @@ body main section.banner {
   text-align: center;
   color: #eeede9;
 }
-body main section.banner div h2.banner-content {
+body main section.banner div h2 {
   font-size: 3rem;
+  font-weight: bold;
+  color: #d88c21;
   margin-bottom: 1rem;
 }
-body main section.banner div p.banner-content {
-  font-size: 1.5rem;
+body main section.banner div p {
+  font-size: 1rem;
+  font-weight: bold;
+}
+body main section.banner div a.btn-primary {
+  margin-top: 20px;
+  text-decoration: none;
   font-weight: bold;
 }
 

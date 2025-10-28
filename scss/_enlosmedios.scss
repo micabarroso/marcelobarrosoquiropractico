@@ -11,12 +11,20 @@ body{
             color: $color-blanco;
 
             div{
-                h2.banner-content{
+                h2{
                     font-size: 3rem;
+                    font-weight: bold;
+                    color: $color-amarillo;
                     margin-bottom: 1rem;
                 }
-                p.banner-content {
-                    font-size: 1.5rem;
+                p{
+                    font-size: 1rem;
+                    font-weight: bold;
+                }
+
+                a.btn-primary{
+                    margin-top: 20px;
+                    text-decoration: none;
                     font-weight: bold;
                 }
 
