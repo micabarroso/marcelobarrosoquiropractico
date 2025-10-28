@@ -22,7 +22,7 @@ body header nav div h1 .logo {
   font-size: 1.8rem;
   color: #eeede9;
 }
-body header nav ul .nav-links {
+body header nav ul {
   display: flex;
   list-style: none;
 }
