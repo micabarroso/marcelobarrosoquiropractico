@@ -13,7 +13,7 @@ body header {
 }
 body header nav {
   max-width: 1200px;
-  margin: 0;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -271,11 +271,11 @@ body main section.entrevistas-section div.entrevistas-grid div.entrevistas-item 
 }
 body main section.entrevistas-section div.entrevistas-grid div.entrevistas-item h3 {
   margin: 2rem 0 1rem 0;
-  font-size: larger;
+  font-size: x-large;
   font-weight: 900;
 }
 body main section.entrevistas-section div.entrevistas-grid div.entrevistas-item p {
-  font-size: small;
+  font-size: medium;
   font-weight: 500;
 }
 
