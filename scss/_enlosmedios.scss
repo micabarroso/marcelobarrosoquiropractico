@@ -2,7 +2,7 @@ body{
     main{
         section.banner {
             height: 100vh;
-            background: url(../assets/Banner\ en\ los\ medios.jpg) center/cover;
+            background:url(../assets/Banner\ en\ los\ medios.jpg) center/cover;
             display: flex;
             align-items: center;
             justify-items: center;
@@ -33,13 +33,16 @@ body{
 
         section.notas-section{
             padding: 5rem 2rem;
-            background-color: white;
+            background-color: $color-blanco;
             text-align: center;
                 
 
             h2{
                 margin-bottom: 3rem;
                 font-weight: bolder;
+                display: inline-block;      
+                border-bottom: 5px solid $color-amarillo;
+                padding-bottom: 0.4rem;      
 
             }
 
@@ -57,9 +60,16 @@ body{
                     padding: 1rem;
                     border-radius: 10px;
                     box-shadow: 0 2px 5px rgba(0,0,0, 0.1);
+                    transition: transform 0.3s ease;
+
+                    &:hover {
+                    transform: scale(1.05);
+                    }
+
                     img{
                         width: 100%;
                         border-radius: 5px;
+                        
                     }
                     h3{
                         margin: 2rem 0 1rem 0;
@@ -84,7 +94,72 @@ body{
                 
             }
         }
-
      
+        section.entrevistas-section{
+            padding: 5rem 2rem;
+            background-color: $color-amarillo;
+            text-align: center;
+
+            h2{
+                color: $color-blanco !important;
+                margin-bottom: 3rem;
+                font-weight: bolder;
+                display: inline-block;      
+                border-bottom: 5px solid $color-blanco;
+                padding-bottom: 0.4rem;      
+
+            }
+
+            div.entrevistas-grid{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 2rem;
+                max-width: 1200px;
+                margin: 0 auto;            
+
+                div.entrevistas-item{
+                    display: grid;
+                    align-content: space-between;
+                    background-color: $color-blanco;
+                    padding: 1rem;
+                    border-radius: 10px;
+                    box-shadow: 0 2px 5px rgba(0,0,0, 0.1);
+                    transition: transform 0.3s ease;
+
+                    &:hover {
+                    transform: scale(1.05);
+                    }
+
+                    a{
+                        img{
+                            width: 100%;
+                            border-radius: 5px;                      
+                        }
+                    }
+
+                    h3{
+                        margin: 2rem 0 1rem 0;
+                        font-size: larger;
+                        font-weight:900;
+                    }
+
+                    p{
+                        font-size: small;
+                        font-weight: 500;
+                    }
+
+                }
+            }
+
+
+
+
+
+
+
+
+
+
+        }
     }
 }
