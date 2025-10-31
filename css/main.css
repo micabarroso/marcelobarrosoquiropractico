@@ -100,5 +100,26 @@ body main section.banner div a.btn-primary {
   text-decoration: none;
   font-weight: bold;
 }
+body main section.banner section.notas-section {
+  padding: 5rem 2rem;
+  background-color: white;
+  text-align: center;
+}
+body main section.banner section.notas-section h2 {
+  margin-bottom: 3rem;
+}
+body main section.banner section.notas-section div.notas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+body main section.banner section.notas-section div.notas-grid div.notas-item {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
 
 /*# sourceMappingURL=main.css.map */
