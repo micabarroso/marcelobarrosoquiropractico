@@ -38,6 +38,12 @@ body header nav ul li a.nav-links {
 body header nav ul li a.nav-links:hover {
   color: #d88c21 !important;
 }
+body footer.piepagina {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 2rem;
+}
 
 .btn-primary {
   background-color: #d88c21;
@@ -100,26 +106,46 @@ body main section.banner div a.btn-primary {
   text-decoration: none;
   font-weight: bold;
 }
-body main section.banner section.notas-section {
+body main section.notas-section {
   padding: 5rem 2rem;
   background-color: white;
   text-align: center;
 }
-body main section.banner section.notas-section h2 {
+body main section.notas-section h2 {
   margin-bottom: 3rem;
+  font-weight: bolder;
 }
-body main section.banner section.notas-section div.notas-grid {
+body main section.notas-section div.notas-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
   max-width: 1200px;
   margin: 0 auto;
 }
-body main section.banner section.notas-section div.notas-grid div.notas-item {
+body main section.notas-section div.notas-grid div.notas-item {
+  display: grid;
+  align-content: space-between;
   background-color: white;
   padding: 1rem;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+body main section.notas-section div.notas-grid div.notas-item img {
+  width: 100%;
+  border-radius: 5px;
+}
+body main section.notas-section div.notas-grid div.notas-item h3 {
+  margin: 2rem 0 1rem 0;
+  font-size: larger;
+  font-weight: 900;
+}
+body main section.notas-section div.notas-grid div.notas-item p {
+  font-style: italic;
+  font-size: small;
+  font-weight: 500;
+}
+body main section.notas-section div.notas-grid div.notas-item a span {
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=main.css.map */

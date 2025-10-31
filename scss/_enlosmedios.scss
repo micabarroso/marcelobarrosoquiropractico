@@ -29,33 +29,62 @@ body{
                 }
 
             }
+        }
 
-            section.notas-section{
-                padding: 5rem 2rem;
-                background-color: white;
-                text-align: center;
+        section.notas-section{
+            padding: 5rem 2rem;
+            background-color: white;
+            text-align: center;
                 
 
-                h2{
-                    margin-bottom: 3rem;
-                }
+            h2{
+                margin-bottom: 3rem;
+                font-weight: bolder;
 
-                div.notas-grid{
-                    display: grid;
-                    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-                    gap: 2rem;
-                    max-width: 1200px;
-                    margin: 0 auto;
-
-                    div.notas-item{
-                        background-color: white;
-                        padding: 1rem;
-                        border-radius: 10px;
-                        box-shadow: 0 2px 5px rgba(0,0,0, 0.1);
-                    }
-                }
             }
 
+            div.notas-grid{
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 2rem;
+                max-width: 1200px;
+                margin: 0 auto;
+
+                div.notas-item{
+                    display: grid;
+                    align-content: space-between;
+                    background-color: white;
+                    padding: 1rem;
+                    border-radius: 10px;
+                    box-shadow: 0 2px 5px rgba(0,0,0, 0.1);
+                    img{
+                        width: 100%;
+                        border-radius: 5px;
+                    }
+                    h3{
+                        margin: 2rem 0 1rem 0;
+                        font-size: larger;
+                        font-weight:900;
+                    }
+
+                    p{
+                        font-style: italic;
+                        font-size: small;
+                        font-weight: 500;
+                    }
+
+                    a{
+                        span{
+                            font-weight: bold;
+                        }                       
+                    }
+                }
+
+
+                
+            }
         }
+
+     
     }
 }
