@@ -157,10 +157,10 @@ body .footer .footer-copyright {
   transition: all 0.2s;
 }
 .btn-secondary:hover {
-  background-color: #1c1c1c;
+  background-color: #3d3d3d;
 }
 
-body main section.banner {
+body main section.banner-medios {
   height: 100vh;
   background: url(../assets/Banner\ en\ los\ medios.jpg) center/cover;
   display: flex;
@@ -170,17 +170,17 @@ body main section.banner {
   text-align: center;
   color: #eeede9;
 }
-body main section.banner div h2 {
+body main section.banner-medios div h2 {
   font-size: 3rem;
   font-weight: bold;
   color: #d88c21;
   margin-bottom: 1rem;
 }
-body main section.banner div p {
+body main section.banner-medios div p {
   font-size: 1rem;
   font-weight: bold;
 }
-body main section.banner div a.btn-primary {
+body main section.banner-medios div a.btn-primary {
   margin-top: 20px;
   text-decoration: none;
   font-weight: bold;
@@ -277,6 +277,169 @@ body main section.entrevistas-section div.entrevistas-grid div.entrevistas-item 
 body main section.entrevistas-section div.entrevistas-grid div.entrevistas-item p {
   font-size: medium;
   font-weight: 500;
+}
+
+body main section.banner-contacto {
+  height: 100vh;
+  background: url(../assets/Banner\ contacto.jpg) center/cover;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #eeede9;
+}
+body main section.banner-contacto div h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #d88c21;
+  margin-bottom: 1rem;
+}
+body main section.banner-contacto div p {
+  font-size: 1rem;
+  font-weight: bold;
+}
+body main section.banner-contacto div a.btn-primary {
+  margin-top: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+body main section.redes-section {
+  padding: 5rem 2rem;
+  text-align: center;
+}
+body main section.redes-section div.redes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+body main section.redes-section div.redes-grid div.redes-items a.redes-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #eeede9;
+  font-weight: 600;
+  border-radius: 50px;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  background-color: #3d3d3d;
+}
+body main section.redes-section div.redes-grid div.redes-items a.redes-card:hover {
+  border-color: #d88c21;
+  transform: scale(1.03);
+}
+body main section.redes-section div.redes-grid div.redes-items a.redes-card img.redes-icon {
+  width: 40px;
+  height: 40px;
+}
+body main section.form-section h2 {
+  margin-bottom: 3rem;
+  font-weight: bolder;
+  display: inline-block;
+  border-bottom: 5px solid #d88c21;
+  padding-bottom: 0.4rem;
+}
+body main section.form-section {
+  padding: 5rem 2rem;
+  background-color: #eeede9;
+  text-align: center;
+}
+body main section.form-section form.consulta-form {
+  max-width: 600px;
+  margin: 2rem auto;
+  display: grid;
+  gap: 1rem;
+}
+body main section.form-section form.consulta-form input, body main section.form-section form.consulta-form select {
+  background-color: white;
+  padding: 0.8rem;
+  border: 1px solid #3d3d3d;
+  border-radius: 5px;
+}
+body main section.form-section form.consulta-form input[type=submit] {
+  background-color: #1c1c1c;
+  font-size: large;
+  font-weight: bold;
+  color: #eeede9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border: none;
+  transition: all 0.3s ease;
+}
+body main section.form-section form.consulta-form input[type=submit]:hover {
+  background-color: #d88c21;
+}
+body main section.form-section form.consulta-form label {
+  font-weight: bold;
+}
+body main section.ubicacion-section {
+  padding: 5rem 2rem;
+  background-color: white;
+  text-align: center;
+}
+body main section.ubicacion-section h2 {
+  margin-bottom: 3rem;
+  font-weight: bolder;
+  display: inline-block;
+  border-bottom: 5px solid #d88c21;
+  padding-bottom: 0.4rem;
+}
+body main section.ubicacion-section div.ubicacion-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: start;
+}
+body main section.ubicacion-section div.ubicacion-grid div.ubicacion-item {
+  text-align: left;
+}
+body main section.ubicacion-section div.ubicacion-grid div.ubicacion-item h3 {
+  font-size: x-large;
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+body main section.ubicacion-section div.ubicacion-grid div.ubicacion-item p {
+  font-size: medium;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+body main section.ubicacion-section div.ubicacion-grid div.ubicacion-item div.horarios h4 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #d88c21;
+}
+body main section.ubicacion-section div.ubicacion-grid div.ubicacion-item div.horarios table {
+  width: fit-content;
+  max-width: 100%;
+  border-collapse: collapse;
+}
+body main section.ubicacion-section div.ubicacion-grid div.ubicacion-item div.horarios table td {
+  padding: 0.6rem 1rem;
+  border-bottom: 1px solid #ddd;
+  font-size: 0.95rem;
+}
+body main section.ubicacion-section div.ubicacion-grid div.ubicacion-item div.horarios table td:first-child {
+  font-weight: 600;
+  color: #1c1c1c;
+}
+body main section.ubicacion-section div.ubicacion-grid div.ubicacion-item div.horarios table tr:last-child td {
+  border-bottom: none;
+}
+body main section.ubicacion-section div.ubicacion-grid div.ubicacion-item div.mapa iframe {
+  width: 100%;
+  height: 350px;
+  border: 0;
+  border-radius: 8px;
+}
+@media (max-width: 768px) {
+  body main section.ubicacion-section .ubicacion-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
