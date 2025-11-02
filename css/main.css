@@ -442,4 +442,42 @@ body main section.ubicacion-section div.ubicacion-grid div.ubicacion-item div.ma
   }
 }
 
+body main section.banner-eligen {
+  height: 100vh;
+  background: url(../assets/Banner\ por\ que\ me\ eligen.jpg) center/cover;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #eeede9;
+}
+body main section.banner-eligen div h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #d88c21;
+  margin-bottom: 1rem;
+}
+body main section.banner-eligen div p {
+  font-size: 1rem;
+  font-weight: bold;
+}
+body main section.banner-eligen div a.btn-primary {
+  margin-top: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+body main section.quiropraxia-section h2 {
+  margin-bottom: 3rem;
+  font-weight: bolder;
+  display: inline-block;
+  border-bottom: 5px solid #d88c21;
+  padding-bottom: 0.4rem;
+}
+body main section.quiropraxia-section {
+  padding: 5rem 2rem;
+  background-color: #eeede9;
+  text-align: center;
+}
+
 /*# sourceMappingURL=main.css.map */

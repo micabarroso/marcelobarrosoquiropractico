@@ -1,0 +1,55 @@
+body{
+    main{
+        section.banner-eligen{
+            height: 100vh;
+            background:url(../assets/Banner\ por\ que\ me\ eligen.jpg) center/cover;
+            display: flex;
+            align-items: center;
+            justify-items: center;
+            justify-content: center;
+            text-align: center;
+            color: $color-blanco;
+
+            div{
+                h2{
+                    font-size: 3rem;
+                    font-weight: bold;
+                    color: $color-amarillo;
+                    margin-bottom: 1rem;
+                }
+                p{
+                    font-size: 1rem;
+                    font-weight: bold;
+                }
+
+                a.btn-primary{
+                    margin-top: 20px;
+                    text-decoration: none;
+                    font-weight: bold;
+                }
+            }
+            
+
+        }
+
+        section.quiropraxia-section{
+            h2{
+                margin-bottom: 3rem;
+                font-weight: bolder;
+                display: inline-block;      
+                border-bottom: 5px solid $color-amarillo;
+                padding-bottom: 0.4rem;  
+            }
+            padding: 5rem 2rem;
+            background-color: $color-blanco;
+            text-align: center;
+
+
+
+        }
+
+
+
+
+    }
+}

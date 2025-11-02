@@ -14,121 +14,168 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="https://kit.fontawesome.com/0647e7d9bc.js" crossorigin="anonymous"></script>
 </head>
 
 
 <body>
     <header>
         <!--encabezado-->
-        <img src="../assets/firma_marcelo.png" alt="Firma de Marcelo Barroso Griffiths">
-
         <nav>
-            <ul>
-                <li></li><a href="../index.html">Inicio</a>
-                <li></li><a href="./tu-quiropractico.html">Tu Quiropráctico</a>
-                <li></li><a href="./en-los-medios.html">En los medios</a>
-                <li></li><a href="#">¿Por qué me eligen?</a>
-                <li></li><a href="./contacto.html">Contacto</a>
+            <div class="logo">
+                <h1 class="logo">Marcelo Barroso Griffiths</h1>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="../index.html" class="nav-links">Inicio</a></li>
+                <li><a href="./tu-quiropractico.html" class="nav-links">Tu Quiropráctico</a></li>
+                <li><a href="./en-los-medios.html" class="nav-links">En los medios</a></li>
+                <li><a href="#" class="nav-links">¿Por qué me eligen?</a></li>
+                <li><a href="./contacto.html" class="nav-links">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <!--contenido principal-->
-        <section>
-            <img src="../assets/Banner por que me eligen.jpg" alt="Banner ¿Por qué me eligen?">
+        <section id="Eligen" class="banner-eligen">
+            <div class="banner-content">
+                <h2>¿Por qué me eligen?</h2>
+                <p>Descubre por qué la quiropraxia te ayuda a recuperar el equilibrio, energía y bienestar en tu vida</p>
+                <a href="#beneficios" target="_blank" class="btn-primary">Ver beneficios</a>
+            </div>
         </section>
 
-        <section>
+        <section id="quiropraxia" class="quiropraxia-section">
             <h2>¿Qué es la quiropraxia?</h2>
             <p>La quiropraxia es un arte natural basada en el cuidado de la columna vertebral libre de cualquier fármaco que mantiene la salud de todo el sistema nervioso. Cuando la columna no se mueve con libertad, hablamos de subluxación, esta se da cuando dos o mas vertebras pierden su motricidad y/o su posición nomal, esto puede causar la interrupción del flujo del sistema nervioso e interferir con la comunicación entre el cuerpo y el cerebro. La degeneración de la columna no tiene que ver con su edad. El origen de la subluxación puede ser por mala postura, jardinería, estrés químico (medicamentos), embarazo, levantar peso incorrectamente, estrés físico y deportes. La quiropráxia ayuda a solucionar estos problemas localizando y ajustando las interferencias en la columna para que el sistema nervioso pueda funcionar al nivel optimo brindándote así, Salud, Bienestar y calidad de vida.</p>
         </section>
 
-        <section>
+        <section id="valores" class="valores-section">
             <h2>¿Por qué me eligen?</h2>
 
-            <article>
-                <img src="../assets/compromiso activo.png" alt="Icono Compromiso activo">
-                <h3>Compromiso Activo</h3>
-                <p>Acompaño a las personas en su decisión de cuidarse desde la conciencia y la intención.</p>
-            </article>
+            <div class="valores-grid">
 
-            <article>
-                <img src="../assets/potencia tu vitalidad.png" alt="Icono Potencia tu vitalidad">
-                <h3>Potencia tu vitalidad</h3>
-                <p>Más energía, movilidad y descanso reparador.</p>
-            </article>
+                <!--columna izquierda-->
+                <div class="valores-item">
 
-            <article>
-                <img src="../assets/tratamiento personalizado.png" alt="Icono Tratamiento 100% personalizado">
-                <h3>Tratamiento 100% personalizado</h3>
-                <p>Escucho, respeto y estoy presente para cada persona que elige transformar su vida con quiropraxia.</p>
-            </article>
+                    <div class="valor">
+                        <img src="../assets/compromiso activo.png" alt="Icono Compromiso activo">
+                        <h3>Compromiso Activo</h3>
+                        <p>Acompaño a las personas en su decisión de cuidarse desde la conciencia y la intención.</p>
+                    </div>
 
-            <article>
-                <img src="../assets/bienestar integral.png" alt="Icono Bienestar integral">
-                <h3>Bienestar integral</h3>
-                <p>Trabajo para alinear no solo la columna, sino también la experiencia física, emocional y mental de cada persona.</p>
-            </article> 
-            
-            <img src="../assets/ajuste1.jpg" alt="Fotos ajustes quiroprácticos">
+                    <div class="valor">
+                        <img src="../assets/potencia tu vitalidad.png" alt="Icono Potencia tu vitalidad">
+                        <h3>Potencia tu vitalidad</h3>
+                        <p>Más energía, movilidad y descanso reparador.</p>                       
+                    </div>    
+                    
+
+                    <div class="valor">
+                        <img src="../assets/tratamiento personalizado.png" alt="Icono Tratamiento personalizado">
+                        <h3>Tratamiento 100% personalizado</h3>
+                        <p>Escucho, respeto y estoy presente para cada persona que elige transformar su vida con quiropraxia.</p>                       
+                    </div>                
+
+                    <div class="valor">
+                    <img src="../assets/bienestar integral.png" alt="Icono Bienestar integral">
+                    <h3>Bienestar integral</h3>
+                    <p>Trabajo para alinear no solo la columna, sino también la experiencia física, emocional y mental de cada persona.</p>      
+                    </div> 
+                </div>
+
+                <!--columna derecha-->
+                <div class="valores-item">
+                    <img src="../assets/ajuste1.jpg" alt="Foto ajuste quiropráctico">
+                </div>
+
+            </div>
         </section>
 
-        <section>
+        <section id="beneficios" class="beneficios-section">
             <h2>¿Quienes me eligen?</h2>
-            
-            <article>
-                <h3>Embarazo</h3>
-                <p>Incluyendo la quiropraxia entre otros hábitos de bienestar, puedes crear un entorno óptimo para el bebé.</p>
-            </article>
 
-            <article>
-                <h3>Niños</h3>
-                <p>El sistema nervioso de un niño esta en constante evolución, creando billones de conexiones neurológicas. Es fundamental que se desarrolle sin interferencias.</p>
-            </article>
-            
-            <article>
-                <h3>Deportistas</h3>
-                <p>El enfoque de la Quiropráctica sobre el sistema nervioso y la biomecánica de la postura permiten al cuerpo funcionar al 100% y curarse a sí mismo.</p>
-            </article>
-            
-            <article>
-                <h3>Tercer Edad</h3>
-                <p>El envejecimiento es un proceso natural. Por ello es tan importante tomar medidas preventivas para frenar o ralentizar los aspectos más desvitalizantes del envejecimiento.</p>
-            </article>         
+            <div class="beneficios-grid">
+
+                <div class="beneficios-item">
+                    <h3>Embarazo</h3>
+                    <p>Incluyendo la quiropraxia entre otros hábitos de bienestar, puedes crear un entorno óptimo para el bebé.</p>                   
+                </div>            
+
+                <div class="beneficios-item">
+                    <h3>Niños</h3>
+                    <p>El sistema nervioso de un niño esta en constante evolución, creando billones de conexiones neurológicas. Es fundamental que se desarrolle sin interferencias.</p>                   
+                </div> 
+                
+                <div class="beneficios-item">
+                    <h3>Deportistas</h3>
+                    <p>El enfoque de la Quiropráctica sobre el sistema nervioso y la biomecánica de la postura permiten al cuerpo funcionar al 100% y curarse a sí mismo.</p>                   
+                </div>                
+
+                <div class="beneficios-item">
+                    <h3>Tercer Edad</h3>
+                    <p>El envejecimiento es un proceso natural. Por ello es tan importante tomar medidas preventivas para frenar o ralentizar los aspectos más desvitalizantes del envejecimiento.</p>                   
+                </div> 
+
+            </div>   
+
         </section>
+        
     </main>
 
-    <footer class="piepagina">
+    <footer class="footer">
+        <div class="footer-container">
 
-        <div class="firmapie">
-         <img src="../assets/firma_marcelo.png" alt="Firma Marcelo Barroso Griffiths">
+            <div class="footer-col">
+                <h3 class="footer-logo">Marcelo Barroso Griffiths</h3>
+                <p class="footer-servicio">QUIROPRÁCTICO</p>
+                <div class="footer-social">
+                <a href="https://www.instagram.com/vertebralle_quiropraxia" target="_blank">
+                    <img src="../assets/instagram.png" alt="Logo Instagram">
+                </a>
+                
+                <a href="https://www.facebook.com/MarceloQuiropractico" target="_blank">
+                    <img src="../assets/facebook.png" alt="Logo Facebook">
+                </a>
+                
+                <a href="https://www.tiktok.com/@vertebralle?lang=es-419" target="_blank">
+                    <img src="../assets/tiktok.png" alt="Logo TikTok">
+                </a>
+                
+                <a href="https://x.com/Mbquiropraxia" target="_blank">
+                    <img src="../assets/x.png" alt="Logo X">
+                </a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>EXPLORAR</h4>
+                <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./tu-quiropractico.html">Tu Quiropráctico</a></li>
+                <li><a href="./en-los-medios.html">En los medios</a></li>
+                <li><a href="#">¿Por qué me eligen?</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Agenda tu consulta</h4>
+                <a class="footer-celu" href="https://wa.link/tg10we" target="_blank">+54 9 11 3759-0567</a>
+            </div>
+            
         </div>
-        <div class="footer-links">
-            <a href="https://www.instagram.com/vertebralle_quiropraxia" target="_blank">
-                <img src="../assets/instagram.png" alt="Logo Instagram">
-            </a>
 
-            <a href="https://www.facebook.com/MarceloQuiropractico" target="_blank">
-                <img src="../assets/facebook.png" alt="Logo Facebook">
-            </a>
-
-            <a href="https://www.tiktok.com/@vertebralle?lang=es-419" target="_blank">
-                <img src="../assets/tiktok.png" alt="Logo Tik Tok">
-            </a>
-
-            <a href="https://x.com/Mbquiropraxia" target="_blank">
-                <img src="../assets/x.png" alt="Logo X">
-            </a>
+        <div class="footer-copyright">
+        <p>Copyright &copy; 2025 MARCELO BARROSO GRIFFITHS. Designed and Developed by Micaela Barroso.</p>
         </div>
-        <p>Hacenos tu consulta:</p>
-        <a href="https://wa.link/tg10we" target="_blank">+54 9 11 3759-0567</a>
-
-        <p>Copyright &copy; 2025 VERTEBRALLE. Designed and Developed by Micaela Barroso.</p>
-
     </footer>
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
  integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>   
