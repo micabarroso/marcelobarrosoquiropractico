@@ -795,6 +795,83 @@ body main section.valores-section {
   padding: 5rem 2rem;
   text-align: center;
 }
+body main section.valores-section h2 {
+  margin-bottom: 3rem;
+  font-weight: bolder;
+  display: inline-block;
+  border-bottom: 5px solid #d88c21;
+  padding-bottom: 0.4rem;
+}
+body main section.valores-section div.valores-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+body main section.valores-section div.valores-grid div.valores-item div.valor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #eeede9;
+  font-weight: 600;
+  border-radius: 50px;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  background-color: #3d3d3d;
+}
+body main section.valores-section div.valores-grid div.valores-item div.valor:hover {
+  border-color: #d88c21;
+  transform: scale(1.03);
+}
+body main section.valores-section div.valores-grid div.valores-item div.valor img.valor-card {
+  width: 40px;
+  height: 40px;
+}
+body main section.quiropraxia-section {
+  padding: 5rem 2rem;
+  background-color: #eeede9;
+  text-align: center;
+  width: 100%;
+}
+body main section.quiropraxia-section h2 {
+  margin-bottom: 2.5rem;
+  font-weight: bolder;
+  display: inline-block;
+  border-bottom: 5px solid #d88c21;
+  padding-bottom: 0.4rem;
+  font-size: 2rem;
+}
+body main section.quiropraxia-section div.quiropraxia-grid {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: left;
+}
+body main section.quiropraxia-section div.quiropraxia-grid p.quiropraxia-texto {
+  margin: 0;
+  padding: 0 1.5rem;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #444;
+  text-align: left;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+body main .quiropraxia-texto {
+  margin: 0;
+  padding: 0 1.5rem;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #444;
+  text-align: left;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
 body main section.por-que-me-eligen {
   padding: 4rem 0;
   text-align: center;
@@ -859,6 +936,7 @@ body main section.beneficios-section {
   padding: 5rem 2rem;
   background-color: #eeede9;
   text-align: center;
+  width: 100%;
 }
 body main section.beneficios-section h2 {
   margin-bottom: 3rem;
@@ -867,33 +945,42 @@ body main section.beneficios-section h2 {
   border-bottom: 5px solid #d88c21;
   padding-bottom: 0.4rem;
 }
-body main section.beneficios-section div.notas-grid {
+body main section.beneficios-section div.beneficios-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(4, 250px);
   gap: 2rem;
   max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
+  justify-content: center;
+  align-items: stretch;
 }
-body main section.beneficios-section div.notas-grid div.notas-item {
+body main section.beneficios-section div.beneficios-grid div.beneficios-item {
+  align-content: center;
+  justify-content: flex-start;
+  height: 100%;
   display: grid;
-  align-content: space-between;
+  align-content: start;
   background-color: white;
   padding: 1rem;
+  height: 100%;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
 }
-body main section.beneficios-section div.notas-grid div.notas-item:hover {
-  transform: background-color(#d88c21);
-}
-body main section.beneficios-section div.notas-grid div.notas-item h3 {
+body main section.beneficios-section div.beneficios-grid div.beneficios-item h3 {
+  margin: 0 0 0.8rem 0;
+  color: #d88c21;
   margin: 2rem 0 1rem 0;
   font-size: larger;
   font-weight: 900;
 }
-body main section.beneficios-section div.notas-grid div.notas-item p {
+body main section.beneficios-section div.beneficios-grid div.beneficios-item p {
+  margin: 0;
   font-size: small;
   font-weight: 500;
+  color: #1c1c1c;
+  text-align: left;
+  display: flex;
 }
 
 /*# sourceMappingURL=main.css.map */
