@@ -1,0 +1,418 @@
+body{
+    main{
+        section.banner-index{
+       
+            h2{
+                font-size: xx-large;
+                font-weight: bold;
+                color: $color-amarillo;
+            }
+
+            h3{
+                font-family: 'DM Serif Display' !important;
+
+            }
+            
+            div.carousel-fade{
+                div.carousel-item{
+                    transition: opacity 0.8s ease-in-out;
+                }
+
+            }
+
+            div.carousel-inner{
+                div.carousel-item{
+                    img{
+                        display: flex;
+                        align-items: center;
+                        justify-items: center;
+                        justify-content: center;
+                        text-align: center;
+                        color: $color-blanco;
+                        align-content: center;                        
+                    }
+                    div.carousel-caption.d-none.d-md-block{
+
+                        a.btn-primary,a.btn-secondary{
+                            margin-top: 20px;
+                            text-decoration: none !important;
+                            font-weight: bold;
+
+
+                        }
+
+                        a.btn-secondary{
+                            background-color: $color-gris;
+                            color: $color-blanco;
+
+                            &:hover{
+                                background-color: $color-blanco;
+                                color: $color-negro;
+                            }
+                        }
+                    }
+                }        
+            }        
+        }
+
+        section.form-section{
+            h2{
+                margin-bottom: 3rem;
+                font-weight: bolder;
+                display: inline-block;      
+                border-bottom: 5px solid $color-amarillo;
+                padding-bottom: 0.4rem;  
+            }
+            padding: 5rem 2rem;
+            background-color: $color-blanco;
+            text-align: center;
+
+            form.consulta-form{
+                max-width: 600px;
+                margin: 2rem auto;
+                display: grid;
+                gap: 1rem;
+
+                input,select{
+                    background-color: white;
+                    padding: 0.8rem;
+                    border: 1px solid $color-gris;
+                    border-radius: 5px;
+                }                           
+
+                input[type="submit"] {
+                    background-color: $color-negro;
+                    font-size: large;
+                    font-weight: bold;
+                    color: $color-blanco;
+                    box-shadow: 0 2px 5px rgba(0,0,0, 0.1);
+                    border: none;
+                    transition: all 0.3s ease;
+
+                    &:hover{
+                        background-color: $color-amarillo;
+                    }
+                }
+
+                label{
+                    font-weight: bold;
+
+                }
+            }
+        }
+
+        section.bienvenidos-section {
+            padding: 5rem 2rem;
+            background-color: white;
+            text-align: center;
+
+
+            h2 {
+                margin-bottom: 3rem;
+                font-weight: bolder;
+                display: inline-block;
+                border-bottom: 5px solid $color-amarillo;
+                padding-bottom: 0.4rem;                
+            }
+            .bienvenidos-grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr;;
+                gap: 2rem;
+                max-width: 1200px;
+                margin: 0 auto;
+                align-items: center;
+
+                .bienvenidos-item{
+                    text-align: left;
+
+                    video{
+                        max-width: 100%;
+                        height: auto;
+                        border-radius: 8px;
+                        display: block;
+                        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+                    }
+
+                    h3 {
+                        font-size: xx-large !important;
+                        font-weight: 900 !important;
+                        margin-bottom: 1rem;  
+                    }
+
+                    p {
+                        font-size: medium;
+                        font-weight: 500;
+                        margin-bottom: 1rem;
+                    }
+
+                    a.btn-primary{
+                        text-decoration: none;
+                        font-weight: bold;
+                    }
+                }
+
+
+            }
+            
+            
+
+
+        }
+
+        section.ubicacion-section{
+            padding: 5rem 2rem;
+            background-color: white;
+            text-align: center; 
+
+            h2{
+                margin-bottom: 3rem;
+                font-weight: bolder;
+                display: inline-block;      
+                border-bottom: 5px solid $color-amarillo;
+                padding-bottom: 0.4rem;  
+            }
+            
+            div.ubicacion-grid{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 2rem;
+                max-width: 1200px;
+                margin: 0 auto;
+                align-items: start;
+                
+                div.ubicacion-item{
+                    text-align: left;
+
+                    h3{
+                        font-size: x-large;
+                        font-weight: 900;
+                        margin-bottom: 1rem;
+                    }
+
+                    p{
+                        font-size: medium;
+                        font-weight: 500;
+                        margin-bottom: 1.5rem;
+                    }
+                    
+                    div.horarios{
+                        h4 {
+                        font-weight: bold;
+                        margin-bottom: 1rem;
+                        color: $color-amarillo;
+                        }
+
+                        table {
+                            
+                            width: fit-content;
+                            max-width: 100%;
+                            border-collapse: collapse;
+
+                            td {
+                                padding: 0.6rem 1rem;
+                                border-bottom: 1px solid #ddd;
+                                font-size: 0.95rem;
+                            }
+
+                            td:first-child {
+                                font-weight: 600;
+                                color: $color-negro;
+                            }
+
+                            tr:last-child td {
+                                border-bottom: none;
+                            }
+                        }                       
+                    }
+                    
+                    div.mapa{
+                        iframe {
+                            width: 100%;
+                            height: 350px;
+                            border: 0;
+                            border-radius: 8px;
+                        }                       
+                    }           
+                }
+            }
+            
+        }
+
+        section.cards-section{
+            padding: 5rem 2rem;
+            background-color: $color-amarillo;
+            text-align: center;
+
+            h3{
+                color: $color-blanco;
+                font-size: xx-large;
+            }
+
+            h6{
+                font-size: large;
+                font-weight: bolder;
+            }
+
+
+
+            div.cards-grid{
+                display: grid;
+                grid-template-columns: repeat(4, 250px);
+                gap: 2rem;
+                justify-content: center;
+                max-width: 1200px;
+                margin: 0 auto;
+                margin-bottom: 2rem;            
+
+                div.cards-item{
+                    display: grid;
+                    align-content: space-between;
+                    background-color: white;
+                    padding: 1rem;
+                    border-radius: 10px;
+                    box-shadow: 0 2px 5px rgba(0,0,0, 0.2);
+
+                    
+                    img{
+                        width: 100%;
+                        border-radius: 5px;                      
+                    }
+                    
+
+                    p{
+                        margin: 2rem 0 1rem 0;
+                        font-size: large;
+                        font-weight: 500;
+                    }
+
+                }
+            }
+
+        }
+
+        .faq-section {
+            h2.text-center{
+                margin-bottom: 3rem;
+                font-weight: bolder;
+                display: inline-block;      
+                border-bottom: 5px solid $color-amarillo;
+                padding-bottom: 0.4rem;
+                align-content: center;
+
+            }
+            .accordion-collapse {
+                overflow: hidden;
+                transition: max-height 0.4s ease, opacity 0.4s ease;
+                max-height: 0;
+                opacity: 0;
+
+                &.show {
+                    max-height: 600px; 
+                    opacity: 1;
+                }
+            }
+
+            .accordion-button {
+                font-weight: 600;
+                background-color: white;
+                box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+            }
+
+            .accordion-button:not(.collapsed) {
+                color: $color-negro;
+                background-color: white;
+                box-shadow: none;
+            }
+
+            .accordion-body {
+                background-color: $color-blanco;
+            }        
+        }
+
+
+        section.testimonios-section {
+            background-color: $color-gris; 
+            padding: 5rem 2rem;
+
+            .container-testimonios {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                align-items: center;
+                gap: 3rem;
+                max-width: 1200px;
+                margin: 0 auto;
+            
+
+                .carousel-col {
+                    div.carousel-fade{
+                        div.carousel-item{
+                            transition: opacity 0.8s ease-in-out;
+                        }
+
+                    }
+                    
+                    .card-testimonio {
+                        background-color: $color-blanco;
+                        padding: 2rem;
+                        border-radius: 10px;
+                        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+                        text-align: left;
+                        max-height: 570px;
+
+                        .foto-testimonio {
+                            width: 100%;
+                            border-radius: 8px;
+                            margin-bottom: 1rem;
+                        }
+
+                        blockquote {
+                            font-style: italic;
+                            color: $color-negro;
+                            margin-bottom: 1rem;
+                        }
+                        
+                        h4 {
+                            font-weight: 700;
+                        }
+
+                        p {
+                            font-size: 0.9rem;
+                            color: $color-blanco;
+                        }
+                    }
+                }     
+
+                .texto-col {
+                    text-align: left;
+
+                    h3 {
+                        font-size: 3rem;
+                        font-weight: 700;
+                        color: $color-amarillo;
+                    }
+
+                    h2 {
+                        font-size: 1.8rem;
+                        font-weight: 800;
+                        margin: 1.5rem 0;
+                        color: $color-blanco;
+                    }
+
+                    p {
+                        margin-bottom: 1rem;
+                        font-size: 1rem;
+                        line-height: 1.6;
+                        color: $color-blanco;
+                    }
+
+                    a.btn-primary{
+                        text-decoration: none;
+                        font-weight: bold;
+                    }
+                }    
+            }
+        }
+
+              
+    }
+}

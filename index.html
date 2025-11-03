@@ -19,7 +19,7 @@
     <link href="https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="./css/main.css">
     <script src="https://kit.fontawesome.com/0647e7d9bc.js" crossorigin="anonymous"></script>
 </head>
 
@@ -45,8 +45,9 @@
    
 
     <main>
-        <section>
-            <div id="carouselExampleCaptions" class="carousel-slide">
+        <section class="banner-index">
+            <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+                
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -56,39 +57,43 @@
                 </div>
 
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="assets/banner_tu quiropractico.jpg" class="d-block w-100" alt="Banner Tu Quiropráctico">
+                    <div class="carousel-item active">                     
+                        <img src="assets/carousel_tu quiropractico.jpg" class="d-block w-100" alt="Banner Tu Quiropráctico">
                         <div class="carousel-caption d-none d-md-block">
-                            <a href="https://wa.link/tg10we" target="_blank">
-                                <img src="assets/boton-escribeme.png" alt="Boton escribeme">
-                            </a>
-                        <a href="./pages/tu-quiropractico.html" target="_blank">
-                                <img src="assets/boton-mas-info.png" alt="Boton más información">
-                            </a>
+                            <h2>TU QUIROPRÁCTICO DE CONFIANZA</h2>
+                            <h3>Marcelo Barroso Griffiths</h3>
+                            <P>Conoce mi formación, vocación y filosofía que guían mis ajustes y tu camino hacia una vida más saludable.</P>
+                            <a href="https://wa.link/tg10we" target="_blank" class="btn-primary">Escríbeme</a>
+                            <a href="./pages/tu-quiropractico.html" target="_blank" class="btn-secondary">Más información</a>
                         </div>
                     </div>
+
                     <div class="carousel-item">
-                        <img src="assets/Banner inicio_en los medios.jpg" class="d-block w-100" alt="Banner En los Medios">
+                        <img src="assets/carousel_en los medios.jpg" class="d-block w-100" alt="Banner En los Medios">
                         <div class="carousel-caption d-none d-md-block">
-                            <a href="./pages/en-los-medios.html" target="_blank">
-                                <img src="assets/boton-ver-notas.png" alt="Botón ver notas">
-                            </a>                        
+                            <h2>EN LOS MEDIOS</h2>
+                            <h3>Notas y Entrevistas</h3>
+                            <P>Conocé mis apariciones en radio, TV y prensa, donde comparto mi visión sobre la quiropraxia y la salud.</P>
+                            <a href="./pages/en-los-medios.html" target="_blank" class="btn-primary">Ver notas</a>                                               
                         </div>
                     </div>
+
                     <div class="carousel-item">
-                        <img src="assets/banner_por que me eligen.jpg" class="d-block w-100" alt="Banner Por qué Me Eligen">
+                        <img src="assets/carousel_por que me eligen.jpg" class="d-block w-100" alt="Banner Por qué Me Eligen">
                         <div class="carousel-caption d-none d-md-block">
-                            <a href="https://wa.link/tg10we" target="_blank">
-                                <img src="assets/boton-saber-mas.png" alt="Botón saber más">
-                            </a>
+                            <h2>¿POR QUÉ ME ELIGEN?</h2>
+                            <h3>Un cuidado que marca la diferencia</h3>
+                            <P>Descubre por qué la quiropraxia te ayuda a recuperar el equilibrio, energía y bienestar en tu vida.</P>
+                            <a href="https://wa.link/tg10we" target="_blank" class="btn-primary">Saber más</a>                                                   
                         </div>
                     </div>
+
                     <div class="carousel-item">
-                        <img src="assets/Banner inicio_contacto.jpg" class="d-block w-100" alt="Banner Contacto">
+                        <img src="assets/carousel_contacto.jpg" class="d-block w-100" alt="Banner Contacto">
                         <div class="carousel-caption d-none d-md-block">
-                            <a href="./pages/contacto.html" target="_blank">
-                                <img src="assets/boton-escribeme.png" alt="Botón escríbeme">
-                            </a>                        
+                            <h2>CONTACTO</h2>
+                            <h3>Ciudad de la Paz 1499, Belgrano - CABA</h3>
+                            <a href="./pages/contacto.html" target="_blank" class="btn-primary">Escríbeme</a>                                                   
                         </div>
                     </div>
                 </div>
@@ -104,191 +109,309 @@
                 </button>
             </div>        
         </section>
-        <section class="formulario">
-            <h2>AGENDÁ TU CONSULTA</h2>
 
-            <form action="/submit" method="post">
-                <div>
-                  <label for="nombre">Nombre</label> 
-                  <input type="text" name="nombre" id="nombre"> 
-                </div>
+        <section id="formulario" class="form-section">
+            <h2>Agendá tu consulta</h2>
+            <form action="/submit" method="post" class="consulta-form">
 
-                <div>
-                    <label for="apellido">Apellido</label>
-                    <input type="text" name="apellido" id="apellido">
-                </div>
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre">
 
-                <div>
-                    <label for="razon-de-consulta">Razón de consulta</label>
-                    <select name="razon-de-consulta" id="razon-de-consulta">
-                        <option value="">Dolor de cabeza / migrañas</option>
-                        <option value="">Dolor cervical</option>
-                        <option value="">Dolor lumbar</option>
-                        <option value="">Dolor dorsal</option>
-                        <option value="">Dolor en hombros o brazos</option>
-                        <option value="">Otro</option>
-                    </select>
-                </div>
+                <label for="apellido">Apellido</label>
+                <input type="text" name="apellido" id="apellido">
 
-                <div>
-                    <label for="telefono">Número de teléfono</label>
-                    <input type="text" name="telefono" id="telefono">
-                </div>
+                <label for="razon-de-consulta">Razón de consulta</label>
+                <select name="razon-de-consulta" id="razon-de-consulta">
+                    <option value="">Dolor de cabeza / migrañas</option>
+                    <option value="">Dolor cervical</option>
+                    <option value="">Dolor lumbar</option>
+                    <option value="">Dolor dorsal</option>
+                    <option value="">Dolor en hombros o brazos</option>
+                    <option value="">Otro</option>
+                </select>
 
-                <div>
-                    <label for="email">Email</label>
-                    <input type="text" name="email" id="email">
-                </div>
+                <label for="telefono">Número de teléfono</label>
+                <input type="text" name="telefono" id="telefono">
 
-                <div>
-                    <label for="notas">Notas adicionales</label>
-                    <textarea name="notas" id="notas"></textarea>
-                </div>
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email">
 
-                <div>
-                    <label for="submit"></label>
-                    <input type="submit" value="enviar">
-                </div>
+                <label for="notas">Notas adicionales</label>
+                <textarea name="notas" id="notas"></textarea>
+
+                <label for="submit"></label>
+                <input type="submit" value="enviar">
             </form>
         </section>
 
-        <section>
-            <h2>¡BIENVENID@S!</h2>
-            <video src="assets/video-inicio.mp4" controls></video>
-            <h3>”Elegir avanzar es volver a vos”</h3>
-            <p>Acompaño a quienes deciden dar ese primer paso consciente. Creo en la libertad de elegir y en el valor de volver a habitarse.Porque vivir mejor es posible, y empieza por elegirte.</p>
-            <a href="https://wa.link/tg10we">
-                <img src="" alt="Botón Enviame un WhatsApp">
-            </a>
-        </section>
+        <section class="bienvenidos-section">
+            <h2>¡Bienvenidos!</h2>
 
-        <section>
+            <div class="bienvenidos-grid"></div>
 
-            <div class="cards-container">
-                <div class= "card">
-                    <article>
-                        <img src="assets/compromiso activo.png" alt="Icono Compromiso activo">
-                        <p>Compromiso activo</p>
-                    </article>                    
-                </div>
-            
-
-                <div class="card">
-                    <article>
-                        <img src="assets/potencia tu vitalidad.png" alt="Icono Potencia tu vitalidad">
-                        <p>Potencia tu vitalidad</p>
-                    </article>    
+                <!-- Columna izquierda -->
+                <div class="bienvenidos-item video-container">                   
+                    <video src="assets/video-inicio.mp4" controls></video>
                 </div>
 
-                <div class="card">
-                    <article>
-                        <img src="assets/tratamiento personalizado.png" alt="Icono Tratamiento 100% personalizado">
-                        <p>Tratamiento 100% personalizado</p>
-                    </article> 
+                <!-- Columna derecha -->
+                <div class="bienvenidos-item texto-container">
+                    <h3>”Elegir avanzar es volver a vos”</h3>
+                    <p>
+                        Acompaño a quienes deciden dar ese primer paso consciente.
+                        Creo en la libertad de elegir y en el valor de volver a habitarse.
+                    </p>
+                    <p><strong>Porque vivir mejor es posible, y empieza por elegirte.</strong></p>
+                    <a href="https://wa.link/tg10we" class="btn-primary">Enviame un mensaje</a>
                 </div>
-
-                <div class="card">
-                    <article>
-                        <img src="assets/bienestar integral.png" alt="Icono Bienestar integral">
-                        <p>Bienestar integral</p>
-                    </article>
-                </div>
-
-            </div>
-            <h3>Lo que marca la diferencia</h3>
-            <p>Al detectar y ajustar las interferencias en la columna, la quiropraxia permite que tu sistema nervioso trabaje en su máximo potencial.</p>
-            <h6>Brindándote más salud, bienestar y calidad de vida.</h6>
-            <a href="./pages/por-que-me-eligen.html">
-                <img src="" alt="Botón Más información">
-            </a>
-        </section>
-
-        <section>
-            <h2>PREGUNTAS FRECUENTES</h2>
-            <div>
-                <article>
-                    <h3>¿Duelen los ajustes?</h3>
-                    <p></p>
-                </article>
-
-                <article>
-                    <h3>¿Cuándo debo ir al quiropráctico?</h3>
-                    <p></p>
-                </article>
-
-                <article>
-                    <h3>¿Por qué suenan los huesos?</h3>
-                    <p></p>
-                </article>
-
-                <article>
-                    <h3>¿Cómo me ayuda la quiropraxia?</h3>
-                    <p></p>
-                </article>
-
-                <article>
-                    <h3>¿Cuánto vale un cuidado quiropráctico?</h3>
-                    <p></p>
-                </article>
-
-                <article>
-                    <h3>¿Cómo es una consulta?</h3>
-                    <p></p>
-                </article>
             </div>
         </section>
 
-        <section>
-            <h2>TESTIMONIOS</h2>
-            <article>
-                <img src="assets/testimonio-mariano.jpg" alt="Paciente Mariano Argento">
-            </article>
-        </section>
+        <section id="cards" class="cards-section">
+            <div class="cards-grid">
 
-        
-        </section>
-            <h3>El equilibrio detrás del éxito</h3>
-            <p>Detrás de cada voz, cada actuación y cada logro profesional, hay algo en común: una columna cuidada. Quienes eligen la quiropraxia como parte de su rutina saben que el verdadero rendimiento empieza con la salud.</h4>
-            <h4>Potencio la vitalidad, concentración y equilibrio necesarios para alcanzar lo mejor en cada profesión.</h2>
-            <a href="./pages/en-los-medios.html">
-                <img src="" alt="Botón Conocé mis entrevistas">
-            </a>
-        </section>
-
-        <section>
-            <h2>UBICACIÓN</h2>
-            <h3>Ciudad Autónoma de Buenos Aires</h3>
-            <h4>Consultorio Quiropráctico “Vertebralle”</h4>
-            <p>Ciudad de la Paz 1499, Belgrano - CABA</p>
-        </section>
-
-        <section class="mapa">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.4421982898834!2d-58.452600000000004!3d-34.567676000000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5d00c16cb91%3A0x47bf2f1247c429f9!2sQuiropr%C3%A1xia%20Vertebralle%20Belgrano%20Dr%20Marcelo%20Barroso%20Griffiths!5e0!3m2!1ses-419!2sar!4v1759383217426!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </section>
-        
-        <section>
-            <h2>Horarios</h2>
-            <table>
-               <tr>
-                  <td>Lunes</td>
-                  <td>8:00 - 14:00 hs</td>
-                </tr>
+                <div class="cards-item">
+                    <img src="assets/compromiso activo.png" alt="Icono Compromiso activo">
+                    <p>Compromiso activo</p>
+                </div> 
                 
-                <tr>
-                 <td>Martes</td>
-                 <td>15:00 - 20:00 hs</td>
-                </tr>
+                <div class="cards-item">
+                    <img src="assets/potencia tu vitalidad.png" alt="Icono Potencia tu vitalidad">
+                    <p>Potencia tu vitalidad</p>
+                </div>
 
-                <tr>
-                 <td>Jueves</td>
-                  <td>13:00 - 18:00 hs</td>
-                </tr>
-  
-                <tr>
-                  <td>Viernes</td>
-                  <td>8:00 - 14:00 hs</td>
-                </tr>
-            </table>
+                <div class="cards-item">
+                    <img src="assets/tratamiento personalizado.png" alt="Icono Tratamiento 100% personalizado">
+                    <p>100% personalizado</p>
+                </div>
+
+                <div class="cards-item">
+                    <img src="assets/bienestar integral.png" alt="Icono Bienestar integral">
+                    <p>Bienestar integral</p>
+                </div>
+            </div>
+            
+            </div>
+                <h3>Lo que marca la diferencia</h3>
+                <p>Al detectar y ajustar las interferencias en la columna, la quiropraxia permite que tu sistema nervioso trabaje en su máximo potencial.</p>
+                <h6>Brindándote más salud, bienestar y calidad de vida.</h6>
+                <a href="./pages/por-que-me-eligen.html" target="_blank">
+                    <span class="btn-secondary">Más información</span>
+                </a>
+            </div>    
+        </section>
+
+        <section class="faq-section container my-5">
+            <h2 class="text-center mb-4">Preguntas frecuentes</h2>
+
+            <div class="row">
+                <!-- Columna izquierda -->
+                <div class="col-md-6">
+                    <div class="accordion" id="accordionLeft">
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                                    ¿Duelen los ajustes?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionLeft">
+                                <div class="accordion-body">
+                                    Los ajustes quiroprácticos no son dolorosos. En la mayoría de los casos, generan alivio inmediato y sensación de liberación.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                                    ¿Por qué suenan los huesos?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionLeft">
+                                <div class="accordion-body">
+                                    El sonido se debe a la liberación de gases entre las articulaciones, un proceso natural y seguro.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                                    ¿Cuánto vale un cuidado quiropráctico?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionLeft">
+                                <div class="accordion-body">
+                                    El valor puede variar según el tipo de plan o tratamiento, pero siempre se enfoca en ofrecer un beneficio integral a largo plazo.
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Columna derecha -->
+                <div class="col-md-6">
+                    <div class="accordion" id="accordionRight">
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+                                    ¿Cuándo debo ir al quiropráctico?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionRight">
+                                <div class="accordion-body">
+                                    Podés consultar ante molestias, dolores, o simplemente para mantener tu columna saludable y prevenir tensiones.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive">
+                                    ¿Cómo me ayuda la quiropraxia?
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionRight">
+                                <div class="accordion-body">
+                                    La quiropraxia mejora la función del sistema nervioso, ayudando al cuerpo a recuperar su equilibrio y bienestar general.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingSix">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix">
+                                    ¿Cómo es una consulta?
+                                </button>
+                            </h2>
+                            <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionRight">
+                                <div class="accordion-body">
+                                    Durante la primera consulta se realiza una evaluación completa y se define un plan de cuidado personalizado.
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="testimonios" class="testimonios-section">
+
+            <div class="container-testimonios">
+
+                <!-- COLUMNA IZQUIERDA: CARRUSEL -->
+
+                <div class="carousel-col">
+                    <div id="testimoniosCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+                        <div class="carousel-inner">
+
+                            <div class="carousel-item active">
+                                <div class="card-testimonio">
+                                    <img src="./assets/testimonio-mariano.jpg" alt="Mariano Argento" class="foto-testimonio">
+                                    <blockquote>
+                                        “Llevo varios años siendo atendido por Marcelo, llegué por distintos problemas lumbares y cervicales, trabajo mucho con expresiones corporales y la quiropraxia me ayudó a mejorar.”
+                                    </blockquote>
+                                    <h4>Mariano Argento</h4>
+                                    <p>Actor, director y maestro de actores argentino</p>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="card-testimonio">
+                                    <img src="./assets/testimonio-patricio.jpg" alt="Patricio Gimenez" class="foto-testimonio">
+                                    <blockquote>
+                                        “La molestia lumbar desapareció de la mano de Marcelo, ¡un genio!”
+                                    </blockquote>
+                                    <h4>Patricio Gimenez</h4>
+                                    <p>Cantante y compositor argentino</p>
+                                </div>
+                            </div>
+                            
+                            <div class="carousel-item">
+                                <div class="card-testimonio">
+                                    <img src="assets/testimonio-fernando.jpg" alt="Fernando Milo" class="foto-testimonio">
+                                    <blockquote>
+                                        “La quiropraxia me ayudó a mejorar mi estilo de vida, los dolores y molestias lumbares desaparecieron ¡Gracias Marcelo!”
+                                    </blockquote>
+                                    <h4>Fernando Milo</h4>
+                                    <p>Locutor de radio</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#testimoniosCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+
+                        <button class="carousel-control-next" type="button" data-bs-target="#testimoniosCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- COLUMNA DERECHA: TEXTO -->
+
+                <div class="texto-col">
+                    <h3>El equilibrio detrás del éxito</h3>
+                    <p>Detrás de cada voz, cada actuación y cada logro profesional, hay algo en común: una columna cuidada.</p>
+                    <p>Quienes eligen la quiropraxia como parte de su rutina saben que el verdadero rendimiento empieza con la salud.</p>
+                    <h2>Potenciá la vitalidad, concentración y equilibrio necesarios para alcanzar lo mejor en cada profesión.</h2>
+                    <a href="./pages/en-los-medios.html" class="btn-primary">Conocé mis entrevistas</a>
+                </div>
+            </div>
+
+        </section>  
+        
+
+        <section id="ubicacion" class="ubicacion-section">
+            <h2>Ubicación</h2>
+
+            <div class="ubicacion-grid">
+
+                    <!-- Columna izquierda -->
+                    <div class="ubicacion-item">
+                        <h3>Consultorio Quiropráctico “Vertebralle”</h3>
+                        <p>Ciudad de la Paz 1499, Belgrano - CABA</p>
+
+                        <div class="horarios">
+                            <h4>HORARIOS</h4>
+                            <table>
+                            <tr>
+                                <td>Lunes</td>
+                                <td>8:00 - 14:00 hs</td>
+                            </tr>
+                                    
+                            <tr>
+                                <td>Martes</td>
+                                <td>15:00 - 20:00 hs</td>
+                            </tr>
+
+                            <tr>
+                                <td>Jueves</td>
+                                <td>13:00 - 18:00 hs</td>
+                            </tr>
+
+                            <tr>
+                                <td>Viernes</td>
+                                <td>8:00 - 14:00 hs</td>
+                            </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Columna derecha-->
+                    <div class="ubicacion-item">
+                        <div class="mapa">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.4421982898834!2d-58.452600000000004!3d-34.567676000000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5d00c16cb91%3A0x47bf2f1247c429f9!2sQuiropr%C3%A1xia%20Vertebralle%20Belgrano%20Dr%20Marcelo%20Barroso%20Griffiths!5e0!3m2!1ses-419!2sar!4v1759383217426!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+            </div>
         </section>
 
     </main>
@@ -301,19 +424,19 @@
                 <p class="footer-servicio">QUIROPRÁCTICO</p>
                 <div class="footer-social">
                     <a href="https://www.instagram.com/vertebralle_quiropraxia" target="_blank">
-                        <img src="../assets/instagram.png" alt="Logo Instagram">
+                        <img src="./assets/instagram.png" alt="Logo Instagram">
                     </a>
                     
                     <a href="https://www.facebook.com/MarceloQuiropractico" target="_blank">
-                        <img src="../assets/facebook.png" alt="Logo Facebook">
+                        <img src="./assets/facebook.png" alt="Logo Facebook">
                     </a>
                     
                     <a href="https://www.tiktok.com/@vertebralle?lang=es-419" target="_blank">
-                        <img src="../assets/tiktok.png" alt="Logo TikTok">
+                        <img src="./assets/tiktok.png" alt="Logo TikTok">
                     </a>
                     
                     <a href="https://x.com/Mbquiropraxia" target="_blank">
-                        <img src="../assets/x.png" alt="Logo X">
+                        <img src="./assets/x.png" alt="Logo X">
                     </a>
                 </div>
             </div>

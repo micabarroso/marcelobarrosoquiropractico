@@ -160,6 +160,318 @@ body .footer .footer-copyright {
   background-color: #3d3d3d;
 }
 
+body main section.banner-index h2 {
+  font-size: xx-large;
+  font-weight: bold;
+  color: #d88c21;
+}
+body main section.banner-index h3 {
+  font-family: "DM Serif Display" !important;
+}
+body main section.banner-index div.carousel-fade div.carousel-item {
+  transition: opacity 0.8s ease-in-out;
+}
+body main section.banner-index div.carousel-inner div.carousel-item img {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #eeede9;
+  align-content: center;
+}
+body main section.banner-index div.carousel-inner div.carousel-item div.carousel-caption.d-none.d-md-block a.btn-primary, body main section.banner-index div.carousel-inner div.carousel-item div.carousel-caption.d-none.d-md-block a.btn-secondary {
+  margin-top: 20px;
+  text-decoration: none !important;
+  font-weight: bold;
+}
+body main section.banner-index div.carousel-inner div.carousel-item div.carousel-caption.d-none.d-md-block a.btn-secondary {
+  background-color: #3d3d3d;
+  color: #eeede9;
+}
+body main section.banner-index div.carousel-inner div.carousel-item div.carousel-caption.d-none.d-md-block a.btn-secondary:hover {
+  background-color: #eeede9;
+  color: #1c1c1c;
+}
+body main section.form-section h2 {
+  margin-bottom: 3rem;
+  font-weight: bolder;
+  display: inline-block;
+  border-bottom: 5px solid #d88c21;
+  padding-bottom: 0.4rem;
+}
+body main section.form-section {
+  padding: 5rem 2rem;
+  background-color: #eeede9;
+  text-align: center;
+}
+body main section.form-section form.consulta-form {
+  max-width: 600px;
+  margin: 2rem auto;
+  display: grid;
+  gap: 1rem;
+}
+body main section.form-section form.consulta-form input, body main section.form-section form.consulta-form select {
+  background-color: white;
+  padding: 0.8rem;
+  border: 1px solid #3d3d3d;
+  border-radius: 5px;
+}
+body main section.form-section form.consulta-form input[type=submit] {
+  background-color: #1c1c1c;
+  font-size: large;
+  font-weight: bold;
+  color: #eeede9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border: none;
+  transition: all 0.3s ease;
+}
+body main section.form-section form.consulta-form input[type=submit]:hover {
+  background-color: #d88c21;
+}
+body main section.form-section form.consulta-form label {
+  font-weight: bold;
+}
+body main section.bienvenidos-section {
+  padding: 5rem 2rem;
+  background-color: white;
+  text-align: center;
+}
+body main section.bienvenidos-section h2 {
+  margin-bottom: 3rem;
+  font-weight: bolder;
+  display: inline-block;
+  border-bottom: 5px solid #d88c21;
+  padding-bottom: 0.4rem;
+}
+body main section.bienvenidos-section .bienvenidos-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+}
+body main section.bienvenidos-section .bienvenidos-grid .bienvenidos-item {
+  text-align: left;
+}
+body main section.bienvenidos-section .bienvenidos-grid .bienvenidos-item video {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+body main section.bienvenidos-section .bienvenidos-grid .bienvenidos-item h3 {
+  font-size: xx-large !important;
+  font-weight: 900 !important;
+  margin-bottom: 1rem;
+}
+body main section.bienvenidos-section .bienvenidos-grid .bienvenidos-item p {
+  font-size: medium;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+body main section.bienvenidos-section .bienvenidos-grid .bienvenidos-item a.btn-primary {
+  text-decoration: none;
+  font-weight: bold;
+}
+body main section.ubicacion-section {
+  padding: 5rem 2rem;
+  background-color: white;
+  text-align: center;
+}
+body main section.ubicacion-section h2 {
+  margin-bottom: 3rem;
+  font-weight: bolder;
+  display: inline-block;
+  border-bottom: 5px solid #d88c21;
+  padding-bottom: 0.4rem;
+}
+body main section.ubicacion-section div.ubicacion-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: start;
+}
+body main section.ubicacion-section div.ubicacion-grid div.ubicacion-item {
+  text-align: left;
+}
+body main section.ubicacion-section div.ubicacion-grid div.ubicacion-item h3 {
+  font-size: x-large;
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+body main section.ubicacion-section div.ubicacion-grid div.ubicacion-item p {
+  font-size: medium;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+body main section.ubicacion-section div.ubicacion-grid div.ubicacion-item div.horarios h4 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #d88c21;
+}
+body main section.ubicacion-section div.ubicacion-grid div.ubicacion-item div.horarios table {
+  width: fit-content;
+  max-width: 100%;
+  border-collapse: collapse;
+}
+body main section.ubicacion-section div.ubicacion-grid div.ubicacion-item div.horarios table td {
+  padding: 0.6rem 1rem;
+  border-bottom: 1px solid #ddd;
+  font-size: 0.95rem;
+}
+body main section.ubicacion-section div.ubicacion-grid div.ubicacion-item div.horarios table td:first-child {
+  font-weight: 600;
+  color: #1c1c1c;
+}
+body main section.ubicacion-section div.ubicacion-grid div.ubicacion-item div.horarios table tr:last-child td {
+  border-bottom: none;
+}
+body main section.ubicacion-section div.ubicacion-grid div.ubicacion-item div.mapa iframe {
+  width: 100%;
+  height: 350px;
+  border: 0;
+  border-radius: 8px;
+}
+body main section.cards-section {
+  padding: 5rem 2rem;
+  background-color: #d88c21;
+  text-align: center;
+}
+body main section.cards-section h3 {
+  color: #eeede9;
+  font-size: xx-large;
+}
+body main section.cards-section h6 {
+  font-size: large;
+  font-weight: bolder;
+}
+body main section.cards-section div.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 250px);
+  gap: 2rem;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+body main section.cards-section div.cards-grid div.cards-item {
+  display: grid;
+  align-content: space-between;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+body main section.cards-section div.cards-grid div.cards-item img {
+  width: 100%;
+  border-radius: 5px;
+}
+body main section.cards-section div.cards-grid div.cards-item p {
+  margin: 2rem 0 1rem 0;
+  font-size: large;
+  font-weight: 500;
+}
+body main .faq-section h2.text-center {
+  margin-bottom: 3rem;
+  font-weight: bolder;
+  display: inline-block;
+  border-bottom: 5px solid #d88c21;
+  padding-bottom: 0.4rem;
+  align-content: center;
+}
+body main .faq-section .accordion-collapse {
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+  max-height: 0;
+  opacity: 0;
+}
+body main .faq-section .accordion-collapse.show {
+  max-height: 600px;
+  opacity: 1;
+}
+body main .faq-section .accordion-button {
+  font-weight: 600;
+  background-color: white;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+body main .faq-section .accordion-button:not(.collapsed) {
+  color: #1c1c1c;
+  background-color: white;
+  box-shadow: none;
+}
+body main .faq-section .accordion-body {
+  background-color: #eeede9;
+}
+body main section.testimonios-section {
+  background-color: #3d3d3d;
+  padding: 5rem 2rem;
+}
+body main section.testimonios-section .container-testimonios {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+body main section.testimonios-section .container-testimonios .carousel-col div.carousel-fade div.carousel-item {
+  transition: opacity 0.8s ease-in-out;
+}
+body main section.testimonios-section .container-testimonios .carousel-col .card-testimonio {
+  background-color: #eeede9;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  text-align: left;
+  max-height: 570px;
+}
+body main section.testimonios-section .container-testimonios .carousel-col .card-testimonio .foto-testimonio {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+body main section.testimonios-section .container-testimonios .carousel-col .card-testimonio blockquote {
+  font-style: italic;
+  color: #1c1c1c;
+  margin-bottom: 1rem;
+}
+body main section.testimonios-section .container-testimonios .carousel-col .card-testimonio h4 {
+  font-weight: 700;
+}
+body main section.testimonios-section .container-testimonios .carousel-col .card-testimonio p {
+  font-size: 0.9rem;
+  color: #eeede9;
+}
+body main section.testimonios-section .container-testimonios .texto-col {
+  text-align: left;
+}
+body main section.testimonios-section .container-testimonios .texto-col h3 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #d88c21;
+}
+body main section.testimonios-section .container-testimonios .texto-col h2 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin: 1.5rem 0;
+  color: #eeede9;
+}
+body main section.testimonios-section .container-testimonios .texto-col p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #eeede9;
+}
+body main section.testimonios-section .container-testimonios .texto-col a.btn-primary {
+  text-decoration: none;
+  font-weight: bold;
+}
+
 body main section.banner-medios {
   height: 100vh;
   background: url(../assets/Banner\ en\ los\ medios.jpg) center/cover;
