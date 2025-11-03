@@ -105,7 +105,135 @@ body{
 
         }
 
+        section.por-que-me-eligen{
+            padding: 4rem 0;
+            text-align: center;
+
+            h2{
+                color: $color-negro;
+                margin-bottom: 3rem;
+                font-weight: bolder;
+                display: inline-block;      
+                border-bottom: 5px solid $color-amarillo;
+                padding-bottom: 0.4rem;  
+            }
+
+            div.contenedor-eligen{
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                gap: 3rem;
+                max-width: 1200px;
+                margin: 0 auto;
+
+                div.columna-texto{
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1.5rem;
+
+                    div.item {
+                        display: flex;
+                        align-items: flex-start;
+                        gap: 1rem;
+                        text-align: left;
+
+                        img {
+                            width: 40px;
+                            height: 40px;
+                            object-fit: contain;
+                            flex-shrink: 0;
+                        }
+
+                        h4 {
+                            font-weight: 900;
+                            color: $color-gris;
+                            margin-bottom: 0.25rem;
+                        }
+
+                        p {
+                            color: $color-negro;
+                            font-size: 0.95rem;
+                            margin: 0;
+                            line-height: 1.4;
+                        }
+                    }
+                }
+
+                div.columna-imagen {
+                    flex: 1;
+                    display: flex;
+                    justify-content: center;
+
+                    img {
+                        max-width: 100%;
+                        border-radius: 8px;
+                        background-color: $color-blanco;
+                        padding: 1rem;
+                    }
+                }
+
+                
+            }
+            
+                    
+        }
+
+        section.beneficios-section{
+            padding: 5rem 2rem;
+            background-color: $color-blanco;
+            text-align: center;
+
+            h2{
+                margin-bottom: 3rem;
+                font-weight: bolder;
+                display: inline-block;      
+                border-bottom: 5px solid $color-amarillo;
+                padding-bottom: 0.4rem;      
+
+            }
+
+            div.notas-grid{
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 2rem;
+                max-width: 1200px;
+                margin: 0 auto;
+
+                div.notas-item{
+                    display: grid;
+                    align-content: space-between;
+                    background-color: white;
+                    padding: 1rem;
+                    border-radius: 10px;
+                    box-shadow: 0 2px 5px rgba(0,0,0, 0.1);
+                    transition: transform 0.3s ease;
+
+                    &:hover {
+                    transform: background-color($color-amarillo);
+                    }
+
+                    h3{
+                        margin: 2rem 0 1rem 0;
+                        font-size: larger;
+                        font-weight:900;
+                    }
+
+                    p{
+                        font-size: small;
+                        font-weight: 500;
+                    }
+
+                }
 
 
+
+
+
+
+
+            }
+
+        }
     }
 }
