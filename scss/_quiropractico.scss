@@ -1,0 +1,152 @@
+body{
+    main{
+        section.banner-quiropractico{
+            height: 100vh;
+            background:url(../assets/Banner\ tu\ quiropractico.jpg) center/cover;
+            display: flex;
+            align-items: center;
+            justify-items: center;
+            justify-content: center;
+            text-align: center;
+            color: $color-blanco;
+
+            div{
+                h2{
+                    font-size: 3rem;
+                    font-weight: bold;
+                    color: $color-amarillo;
+                    margin-bottom: 1rem;
+                }
+                p{
+                    font-size: 1rem;
+                    font-weight: bold;
+                }
+
+                a.btn-primary{
+                    margin-top: 20px;
+                    text-decoration: none;
+                    font-weight: bold;
+                }
+
+            }
+        }
+        
+        section.marcelo-section{
+            background-color: $color-blanco; 
+            padding: 5rem 2rem;
+
+            div.contenedor-marcelo{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                align-items: center;
+                gap: 3rem;
+                max-width: 1200px;
+                margin: 0 auto;
+            
+
+                div.columna-carousel{
+                    div.carousel-fade{
+                        div.carousel-item{
+                            transition: opacity 0.8s ease-in-out;
+                        }
+
+                    }
+                    
+                    .carousel-item{
+                        background-color: $color-blanco;
+                        padding: 2rem;
+                        border-radius: 10px;
+                        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+                        text-align: left;
+                        max-height: 570px;
+
+                        img.foto-marcelo{
+                            width: 100%;
+                            border-radius: 8px;
+                            margin-bottom: 1rem;
+                        }
+                    }
+                }     
+
+                div.columna-texto{
+                    text-align: left;
+
+                    h2{
+                        margin-bottom: 3rem;
+                        font-weight: bolder;
+                        display: inline-block;      
+                        border-bottom: 5px solid $color-amarillo;
+                        padding-bottom: 0.4rem;
+                        font-size: 3rem;
+                        font-weight: 700;
+                        color: $color-negro;
+                    }
+
+                    div.intro{
+                        div{
+                            h3{
+                            margin: 2rem 0 1rem 0;
+                            font-size: medium;
+                            font-weight:900;  
+                            }
+
+                            h4{
+                             font-weight: larger;
+                             font-weight: bold;   
+                            }
+                        }
+
+                        a.btn-tertiary{
+                            margin: 2rem 0 1rem 0;
+                            text-decoration: none;
+                            font-weight: bold;
+                        }
+                    }
+
+                  
+                }    
+            }
+        }        
+        
+        section.filosofia-section {
+            padding: 5rem 2rem;
+            background-color: $color-blanco;
+            text-align: center;
+            $max-width: 1200px;
+            width: 100%;
+
+            h2 {
+                margin-bottom: 2.5rem;
+                font-weight: bolder;
+                display: inline-block;
+                border-bottom: 5px solid $color-amarillo;
+                padding-bottom: 0.4rem;
+                font-size: 2rem;
+            }
+
+            div.filosofia-grid {
+                max-width: $max-width;
+                width: 100%;
+                margin: 0 auto;               
+                text-align: left;
+                
+                p.filosofia-texto {
+                    margin: 0;
+                    padding: 0 1.5rem;           
+                    font-size: 1rem;
+                    line-height: 1.7;
+                    color: #444;
+                    text-align: left;             
+                    max-width: 1200px;           
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+        }
+
+
+
+
+
+    }
+}

@@ -29,3 +29,17 @@
     );
 }
 
+//boton terciario
+
+.btn-tertiary {
+    @include button-base(
+        $bg: $color-amarillo,
+        $color: $color-blanco,
+        $hover-bg:$color-negro,
+        $width: 12rem,   
+        $height: 3rem,   
+        $radius: 9999px,  
+        $font-family: $font-titulo,
+        $font-size:1rem
+    );
+}

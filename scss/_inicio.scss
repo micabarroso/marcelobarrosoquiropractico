@@ -145,7 +145,8 @@ body{
                         margin-bottom: 1rem;
                     }
 
-                    a.btn-primary{
+                    a.btn-tertiary{
+                        margin: 2rem 0 1rem 0;
                         text-decoration: none;
                         font-weight: bold;
                     }
@@ -240,17 +241,23 @@ body{
 
         section.cards-section{
             padding: 5rem 2rem;
-            background-color: $color-amarillo;
+            background-color: $color-blanco;
             text-align: center;
 
             h3{
-                color: $color-blanco;
+                color: $color-negro;
                 font-size: xx-large;
             }
 
             h6{
                 font-size: large;
                 font-weight: bolder;
+            }
+
+            a.btn-tertiary{
+                margin: 2rem 0 1rem 0;
+                text-decoration: none;
+                font-weight: bold;
             }
 
 

@@ -14,82 +14,172 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" 
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">    
-    <link rel="stylesheet" href="../css/style.css">
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="https://kit.fontawesome.com/0647e7d9bc.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
   <header>
     <!-- encabezado -->
-    <img src="../assets/firma_marcelo.png" alt="Firma de Marcelo Barroso Griffiths">
-    <p>QUIROPRÁCTICO</p>
-
     <nav>
-      <ul>
-        <li><a href="../index.html">Inicio</a></li>
-        <li><a href="#">Tu Quiropráctico</a></li>
-        <li><a href="./en-los-medios.html">En los medios</a></li>
-        <li><a href="./por-que-me-eligen.html">¿Por qué me eligen?</a></li>
-        <li><a href="./contacto.html">Contacto</a></li>
+      <div class="logo">
+        <h1 class="logo">Marcelo Barroso Griffiths</h1>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="../index.html" class="nav-links">Inicio</a></li>
+        <li><a href="#" class="nav-links">Tu Quiropráctico</a></li>
+        <li><a href="./en-los-medios.html" class="nav-links">En los medios</a></li>
+        <li><a href="./por-que-me-eligen.html" class="nav-links">¿Por qué me eligen?</a></li>
+        <li><a href="./contacto.html" class="nav-links">Contacto</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
     <!-- contenido principal -->
-    <section>
-        <img src="../assets/Banner tu quiropractico.jpg" alt="Banner Tu Quiropráctico">
+    <section id="inicio" class="banner-quiropractico">
+      <div class="banner-content">
+        <h2>Lic. Marcelo Barroso Griffiths</h2>
+        <p>Conoce mi formación, vocación y filosofía que guían mis ajustes y tu camino hacia una vida más saludable.</p>
+        <a href="https://wa.link/tg10we" target="_blank" class="btn-primary">Escríbeme</a>
+      </div>
     </section>
 
-    <section>
-        <h2>Hola, soy Marcelo Barroso Griffiths, quiropráctico.</h2>
-        <img src="../assets/ajuste2.jpg" alt="Foto Ajuste quiropráctico">
-        <ul>
-            <li>Quiropráctico (Universidad Nacional de Córdoba)</li>
-            <li>Director General VERTEBRALLE</li>
-            <li>Miembro IFCO (International Federation of Chiropractic and Organizations)</li>
-            <li>Miembro IACE (International Agency of Chiropractic Evaluation West Liberty Iowa USA)</li>
-      
-        </ul>
-        <p>Hace más de 24 años que me dedico a esta profesión que me apasiona. Mi compromiso es acompañarte de forma segura, específica y efectiva para que puedas recuperar y mantener el equilibrio que tu cuerpo necesita.</p>
-        <a href="https://wa.link/tg10we">
-            <img src="" alt="Botón Envía un WhatsApp">
-        </a>
+    <section class="marcelo-section">
+    
+      <div class="contenedor-marcelo">
+
+        <!-- Columna de texto -->
+        <div class="columna-texto">
+          <h2>Hola, soy Marcelo Barroso Griffiths, quiropráctico.</h2>
+
+          <div class="items">
+            <div class="item-pequeño d-flex align-items-center gap-3 mb-2">
+              <i class="fas fa-check text-warning"></i>
+              <span class="texto-con-linea">Quiropráctico (Universidad Nacional de Córdoba)</span>
+            </div>
+
+            <div class="item-pequeño d-flex align-items-center gap-3 mb-2">
+              <i class="fas fa-check text-warning"></i>
+              <span class="texto-con-linea">Director General VERTEBRALLE</span>
+            </div>
+            
+            <div class="item-pequeño d-flex align-items-center gap-3 mb-2">
+              <i class="fas fa-check text-warning"></i>
+              <span class="texto-con-linea">Miembro IFCO (International Federation of Chiropractic and Organizations)</span>
+            </div>
+            
+            <div class="item-pequeño d-flex align-items-center gap-3 mb-2">
+              <i class="fas fa-check text-warning"></i>
+              <span class="texto-con-linea">Miembro IACE (International Agency of Chiropractic Evaluation West Liberty Iowa USA)</span>
+            </div>
+          </div>
+
+          <div class="intro">
+            <div>
+              <h3>Hace más de 24 años que me dedico a esta profesión que me apasiona.</h3>
+              <h4>Alineando la columna, para vivir con más energía, movilidad y descanso reparador.</h4>
+              <a href="https://wa.link/tg10we" class="btn-tertiary">Envía un WhatsApp</a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Columna carousel imagenes -->
+        <div class="columna-carousel">
+
+          <div id="marceloCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+            <div class="carousel-inner">
+
+              <div class="carousel-item active">
+                <img src="../assets/marcelo-1.jpg" alt="marcelo barroso griffiths 1" class="foto-marcelo">
+              </div>
+
+              <div class="carousel-item">
+                <img src="../assets/marcelo-2.jpg" alt="marcelo barroso griffiths 2" class="foto-marcelo">
+              </div>
+                
+              <div class="carousel-item">
+                <img src="../assets/marcelo-3.jpg" alt="marcelo barroso griffiths 3" class="foto-marcelo">
+              </div>
+
+              <div class="carousel-item">
+                <img src="../assets/marcelo-4.jpg" alt="marcelo barroso griffiths 4" class="foto-marcelo">
+              </div>
+
+              <div class="carousel-item">
+                <img src="../assets/marcelo-5.jpg" alt="marcelo barroso griffiths 5" class="foto-marcelo">
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
     </section>
 
-    <section>
-        <h2>Entendiendo la salud</h2>
-        <p>Todos deseamos disfrutar de buena salud, pero el verdadero desafío es asumir el compromiso para conseguirla y sostenerla. La salud no se compra ni se obtiene de manera instantánea: surge de adentro hacia afuera. Cada persona es responsable de dar ese primer paso y hacerse cargo de su propio bienestar. La quiropraxia propone justamente eso: una visión diferente del proceso de salud y enfermedad, basada en la capacidad innata del cuerpo de autorregularse y sanar cuando se le brinda el cuidado adecuado. Cada vez más personas comprenden esta realidad y buscan en la quiropraxia una herramienta para cambiar de forma profunda, natural y duradera su condición de salud.</p>
+    <section id="filosofia" class="filosofia-section">
+      <h2>Entendiendo la salud</h2>
+      <div class="filosofia-grid">
+        <p class="filosofia-texto">Todos deseamos disfrutar de buena salud, pero el verdadero desafío es asumir el compromiso para conseguirla y sostenerla. La salud no se compra ni se obtiene de manera instantánea: surge de adentro hacia afuera. Cada persona es responsable de dar ese primer paso y hacerse cargo de su propio bienestar. La quiropraxia propone justamente eso: una visión diferente del proceso de salud y enfermedad, basada en la capacidad innata del cuerpo de autorregularse y sanar cuando se le brinda el cuidado adecuado. Cada vez más personas comprenden esta realidad y buscan en la quiropraxia una herramienta para cambiar de forma profunda, natural y duradera su condición de salud.</p>
+      </div>
     </section>
   </main>
 
-  <footer class="piepagina">
-    <!-- pie de página -->
-    <div class="firmapie">
-      <img src="../assets/firma_marcelo.png" alt="Firma Marcelo Barroso Griffiths">
+  <footer class="footer">
+    <div class="footer-container">
+
+      <div class="footer-col">
+        <h3 class="footer-logo">Marcelo Barroso Griffiths</h3>
+        <p class="footer-servicio">QUIROPRÁCTICO</p>
+
+        <div class="footer-social">
+          <a href="https://www.instagram.com/vertebralle_quiropraxia" target="_blank">
+            <img src="../assets/instagram.png" alt="Logo Instagram">
+          </a>
+        
+          <a href="https://www.facebook.com/MarceloQuiropractico" target="_blank">
+            <img src="../assets/facebook.png" alt="Logo Facebook">
+          </a>
+        
+          <a href="https://www.tiktok.com/@vertebralle?lang=es-419" target="_blank">
+            <img src="../assets/tiktok.png" alt="Logo TikTok">
+          </a>
+        
+          <a href="https://x.com/Mbquiropraxia" target="_blank">
+            <img src="../assets/x.png" alt="Logo X">
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>EXPLORAR</h4>
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="#">Tu Quiropráctico</a></li>
+          <li><a href="./en-los-medios.html">En los medios</a></li>
+          <li><a href="./por-que-me-eligen.html">¿Por qué me eligen?</a></li>
+          <li><a href="./contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Agenda tu consulta</h4>
+        <a class="footer-celu" href="https://wa.link/tg10we" target="_blank">+54 9 11 3759-0567</a>
+      </div>
+        
     </div>
 
-    <div class="footer-links">
-      <a href="https://www.instagram.com/vertebralle_quiropraxia" target="_blank">
-        <img src="../assets/instagram.png" alt="Logo Instagram">
-      </a>
-      <a href="https://www.facebook.com/MarceloQuiropractico" target="_blank">
-        <img src="../assets/facebook.png" alt="Logo Facebook">
-      </a>
-      <a href="https://www.tiktok.com/@vertebralle?lang=es-419" target="_blank">
-        <img src="../assets/tiktok.png" alt="Logo TikTok">
-      </a>
-      <a href="https://x.com/Mbquiropraxia" target="_blank">
-        <img src="../assets/x.png" alt="Logo X">
-      </a>
+    <div class="footer-copyright">
+      <p>Copyright &copy; 2025 MARCELO BARROSO GRIFFITHS. Designed and Developed by Micaela Barroso.</p>
     </div>
-
-    <p>Hacenos tu consulta:</p>
-    <a href="https://wa.link/tg10we" target="_blank">+54 9 11 3759-0567</a>
-
-    <p>Copyright &copy; 2025 VERTEBRALLE. Designed and Developed by Micaela Barroso.</p>
   </footer>
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
  integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
