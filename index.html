@@ -145,26 +145,35 @@
         </section>
 
         <section class="bienvenidos-section">
-            <h2>¡Bienvenidos!</h2>
+            <div class="container">
+                <h2>¡Bienvenidos!</h2>
 
-            <div class="bienvenidos-grid"></div>
+                <div class="bienvenidos-grid">
 
-                <!-- Columna izquierda -->
-                <div class="bienvenidos-item video-container">                   
-                    <video src="assets/video-inicio.mp4" controls></video>
-                </div>
+                    <!-- COLUMNA IZQUIERDA: VIDEO -->
+                    <div class="col-video">
+                        <div class="video-container">
+                            <video controls poster="assets/poster.jpg">
+                                <source src="assets/video-inicio.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
 
-                <!-- Columna derecha -->
-                <div class="bienvenidos-item texto-container">
-                    <h3>”Elegir avanzar es volver a vos”</h3>
-                    <p>
-                        Acompaño a quienes deciden dar ese primer paso consciente.
-                        Creo en la libertad de elegir y en el valor de volver a habitarse.
-                    </p>
-                    <p><strong>Porque vivir mejor es posible, y empieza por elegirte.</strong></p>
-                    <a href="https://wa.link/tg10we" target="_blank">
-                        <span class="btn-tertiary">Enviame un mensaje</span>
-                    </a>
+                    <!-- COLUMNA DERECHA: TEXTO -->
+                    <div class="col-texto">
+                        <h3>Elegir avanzar es volver a vos</h3>
+                        <p>
+                            Acompaño a quienes deciden dar ese primer paso consciente. 
+                            Creo en la libertad de elegir y en el valor de volver a habitar el cuerpo con plenitud.
+                        </p>
+                        <p>
+                            <strong>Porque vivir mejor es posible, y empieza por elegirte.</strong>
+                        </p>
+                        <a href="https://wa.link/tg10we" target="_blank" class="btn-tertiary">
+                            Envíame un mensaje
+                        </a>
+                    </div>
+
                 </div>
             </div>
         </section>
