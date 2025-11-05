@@ -606,7 +606,7 @@ body main section.entrevistas-section h2 {
 }
 body main section.entrevistas-section div.entrevistas-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
   max-width: 1200px;
   margin: 0 auto;
@@ -1033,6 +1033,37 @@ body main section.por-que-me-eligen div.contenedor-eligen div.columna-imagen img
   background-color: #eeede9;
   padding: 1rem;
 }
+@media (max-width: 430px) {
+  body main section.por-que-me-eligen div.contenedor-eligen {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 1rem;
+  }
+  body main section.por-que-me-eligen div.contenedor-eligen .columna-texto {
+    width: 100%;
+    gap: 1.8rem;
+  }
+  body main section.por-que-me-eligen div.contenedor-eligen .columna-texto .item {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  body main section.por-que-me-eligen div.contenedor-eligen .columna-texto .item img {
+    margin-bottom: 0.5rem;
+  }
+  body main section.por-que-me-eligen div.contenedor-eligen .columna-texto .item h4, body main section.por-que-me-eligen div.contenedor-eligen .columna-texto .item p {
+    text-align: center;
+  }
+  body main section.por-que-me-eligen div.contenedor-eligen .columna-imagen {
+    width: 100%;
+    max-width: 360px;
+  }
+  body main section.por-que-me-eligen div.contenedor-eligen .columna-imagen img {
+    width: 100%;
+    height: auto;
+  }
+}
 body main section.beneficios-section {
   padding: 5rem 2rem;
   background-color: #eeede9;
@@ -1055,6 +1086,11 @@ body main section.beneficios-section div.beneficios-grid {
   margin: 0 auto;
   justify-content: center;
   align-items: stretch;
+}
+@media (max-width: 992px) {
+  body main section.beneficios-section div.beneficios-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 body main section.beneficios-section div.beneficios-grid div.beneficios-item {
   align-content: center;
@@ -1163,6 +1199,38 @@ body main section.marcelo-section div.contenedor-marcelo div.columna-texto div.i
   margin: 2rem 0 1rem 0;
   text-decoration: none;
   font-weight: bold;
+}
+@media (max-width: 430px) {
+  body main section.marcelo-section div.contenedor-marcelo {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  body main section.marcelo-section div.contenedor-marcelo .columna-texto {
+    order: 1;
+    text-align: center;
+  }
+  body main section.marcelo-section div.contenedor-marcelo .columna-texto .intro h3, body main section.marcelo-section div.contenedor-marcelo .columna-texto .intro h4, body main section.marcelo-section div.contenedor-marcelo .columna-texto .intro p {
+    text-align: center;
+  }
+  body main section.marcelo-section div.contenedor-marcelo .columna-texto .intro a {
+    align-content: center;
+  }
+  body main section.marcelo-section div.contenedor-marcelo .columna-carousel {
+    order: 2;
+    width: 100%;
+    max-width: 100%;
+  }
+  body main section.marcelo-section div.contenedor-marcelo .columna-carousel .carousel-item {
+    max-height: none;
+    padding: 1.5rem;
+  }
+  body main section.marcelo-section div.contenedor-marcelo .columna-carousel .carousel-item img.foto-marcelo {
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+  }
 }
 body main section.filosofia-section {
   padding: 5rem 2rem;

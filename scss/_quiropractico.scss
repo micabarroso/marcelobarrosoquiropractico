@@ -104,8 +104,51 @@ body{
                     }
 
                   
-                }    
+                }
+                
+                //ADAPTACION MOVIL
+                @media (max-width: 430px) {
+                    grid-template-columns: 1fr;
+                    gap: 2rem;
+                    padding: 2rem 1rem;
+                    text-align: center;
+
+                    .columna-texto {
+                        order: 1;
+                        text-align: center;
+
+                        .intro {
+                            h3,h4,p{
+                                text-align: center;
+                            }
+
+                            a{
+                                align-content: center;
+                            }
+
+                        }
+                    }
+
+                    .columna-carousel {
+                        order: 2;                      
+                        width: 100%;
+                        max-width: 100%;
+
+                        .carousel-item {
+                        max-height: none;
+                        padding: 1.5rem;
+
+                            img.foto-marcelo {
+                                height: auto;
+                                max-height: 300px;
+                                object-fit: cover;
+                            }
+                        }
+                    }
+                } 
             }
+
+            
         }        
         
         section.filosofia-section {

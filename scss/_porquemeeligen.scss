@@ -140,12 +140,12 @@ body{
 
         .quiropraxia-texto {
         margin: 0;
-        padding: 0 1.5rem;            // ← Espacios laterales (como en la imagen)
+        padding: 0 1.5rem;            
         font-size: 1rem;
         line-height: 1.7;
         color: #444;
-        text-align: left;             // ← Alineado a la izquierda
-        max-width: 1000px;            // ← Opcional: límite interno para mejor lectura
+        text-align: left;            
+        max-width: 1000px;            
         margin-left: auto;
         margin-right: auto;
         }
@@ -222,8 +222,43 @@ body{
                         padding: 1rem;
                     }
                 }
-
                 
+                //ADAPTACION MOVIL
+                @media (max-width: 430px) {
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 2rem;
+                    padding: 2rem 1rem;
+
+                    .columna-texto {
+                        width: 100%;
+                        gap: 1.8rem;
+
+                        .item {
+                            text-align: center;
+                            flex-direction: column;
+                            align-items: center;
+
+                            img {
+                            margin-bottom: 0.5rem;
+                            }
+
+                            h4, p {
+                            text-align: center;
+                            }
+                        }
+                    }
+
+                    .columna-imagen {
+                        width: 100%;
+                        max-width: 360px;
+
+                        img {
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                } 
             }
             
                     
@@ -253,6 +288,11 @@ body{
                 margin: 0 auto;
                 justify-content: center;
                 align-items: stretch;
+                
+                //ADAPTACION MOVIL Y TABLET
+                @media (max-width: 992px) {
+                    grid-template-columns: repeat(2, 1fr);
+                }
 
                 div.beneficios-item{
                     align-content: center;
