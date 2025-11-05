@@ -461,10 +461,24 @@ body main section.cards-section div.cards-grid div.cards-item {
   padding: 1rem;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  cursor: pointer;
+  transform-origin: center;
+}
+body main section.cards-section div.cards-grid div.cards-item:hover {
+  transform: scale(1.08) rotate(3deg);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+  z-index: 10;
+  border-radius: 16px;
 }
 body main section.cards-section div.cards-grid div.cards-item img {
   width: 100%;
   border-radius: 5px;
+  margin-bottom: 1rem;
+  transition: transform 0.4s ease;
+}
+body main section.cards-section div.cards-grid div.cards-item:hover img {
+  transform: scale(1.05);
 }
 body main section.cards-section div.cards-grid div.cards-item p {
   margin: 2rem 0 1rem 0;
@@ -472,6 +486,12 @@ body main section.cards-section div.cards-grid div.cards-item p {
   font-weight: 500;
   text-align: center;
   display: flex;
+}
+@media (max-width: 992px) {
+  body main section.cards-section div.cards-grid .cards-item:hover {
+    transform: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
 }
 body main .faq-section h2.text-center {
   margin-bottom: 3rem;
@@ -1157,6 +1177,15 @@ body main section.beneficios-section div.beneficios-grid div.beneficios-item {
   height: 100%;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  cursor: pointer;
+  transform-origin: center;
+}
+body main section.beneficios-section div.beneficios-grid div.beneficios-item:hover {
+  transform: scale(1.08) rotate(3deg);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+  z-index: 10;
+  border-radius: 16px;
 }
 body main section.beneficios-section div.beneficios-grid div.beneficios-item h3 {
   margin: 0 0 0.8rem 0;
