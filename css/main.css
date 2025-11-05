@@ -921,6 +921,7 @@ body main section.ubicacion-section div.ubicacion-grid div.ubicacion-item div.ma
 
 body main section.banner-eligen {
   height: 100vh;
+  min-height: 600px;
   background: url(../assets/Banner\ por\ que\ me\ eligen.jpg) center/cover;
   display: flex;
   align-items: center;
