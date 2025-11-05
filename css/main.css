@@ -49,11 +49,17 @@ body header nav ul li a.nav-links:hover {
     flex-direction: column;
     text-align: center;
   }
+  body header nav div.logo {
+    text-align: center;
+  }
   body header nav ul.nav-links {
     flex-direction: column;
-    margin: 1rem 0;
+    margin: 1rem 1rem 5rem 0rem;
     text-align: center;
     gap: 1rem;
+  }
+  body header nav ul.nav-links li a.navlinks {
+    text-align: center;
   }
 }
 body .footer {
@@ -788,9 +794,64 @@ body main section.ubicacion-section div.ubicacion-grid div.ubicacion-item div.ma
   border: 0;
   border-radius: 8px;
 }
-@media (max-width: 768px) {
-  body main section.ubicacion-section .ubicacion-grid {
+@media (max-width: 430px) {
+  body main section.ubicacion-section {
+    padding: 3rem 1rem;
+  }
+  body main section.ubicacion-section h2 {
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+  }
+  body main section.ubicacion-section div.ubicacion-grid {
     grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+  }
+  body main section.ubicacion-section div.ubicacion-grid div.ubicacion-item {
+    text-align: center;
+  }
+  body main section.ubicacion-section div.ubicacion-grid div.ubicacion-item h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+  }
+  body main section.ubicacion-section div.ubicacion-grid div.ubicacion-item p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  body main section.ubicacion-section div.ubicacion-grid div.ubicacion-item div.horarios {
+    margin-top: 1.5rem;
+  }
+  body main section.ubicacion-section div.ubicacion-grid div.ubicacion-item div.horarios h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+  }
+  body main section.ubicacion-section div.ubicacion-grid div.ubicacion-item div.horarios table {
+    width: 100%;
+    font-size: 0.95rem;
+  }
+  body main section.ubicacion-section div.ubicacion-grid div.ubicacion-item div.horarios table td {
+    display: block;
+    text-align: center;
+    padding: 0.5rem 0;
+    border: none;
+  }
+  body main section.ubicacion-section div.ubicacion-grid div.ubicacion-item div.horarios table td:first-child {
+    font-weight: bold;
+    color: #333;
+  }
+  body main section.ubicacion-section div.ubicacion-grid div.ubicacion-item div.horarios table td:last-child {
+    font-weight: normal;
+    color: #666;
+  }
+  body main section.ubicacion-section div.ubicacion-grid div.ubicacion-item div.horarios table tr {
+    border-bottom: 1px solid #eee;
+  }
+  body main section.ubicacion-section div.ubicacion-grid div.ubicacion-item div.horarios table tr:last-child {
+    border-bottom: none;
+  }
+  body main section.ubicacion-section div.ubicacion-grid div.ubicacion-item div.mapa iframe {
+    height: 280px;
+    border-radius: 12px;
   }
 }
 

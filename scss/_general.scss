@@ -59,11 +59,21 @@ body{
                 flex-direction: column;
                 text-align: center;
 
+                div.logo{
+                    text-align: center;
+                }
+
                 ul.nav-links{
                     flex-direction: column;
-                    margin: 1rem 0;
+                    margin: 1rem 1rem 5rem 0rem;
                     text-align: center;
                     gap: 1rem;
+
+                    li{
+                        a.navlinks{
+                            text-align: center;
+                        }
+                    }
                 }
 
             }
