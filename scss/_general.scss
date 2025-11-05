@@ -51,6 +51,25 @@ body{
             }
 
         }
+
+        @media (max-width:430px){
+            position: static;
+            nav{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+
+                ul.nav-links{
+                    flex-direction: column;
+                    margin: 1rem 0;
+                    text-align: center;
+                    gap: 1rem;
+                }
+
+            }
+        }
+
+        
     }
 
     .footer {
