@@ -128,7 +128,7 @@ body{
                 align-items: center;
                 margin-top: 2rem;
 
-            
+                //ADAPTACION PARA MOVIL Y TABLET
                 @media (max-width: 992px) {
                     grid-template-columns: 1fr;
                     gap: 2rem;
@@ -186,7 +186,7 @@ body{
                     text-decoration: none;
                 }
 
-                // === MÓVIL: CENTRAR TODO ===
+                //ADAPTACION PARA MOVIL Y TABLET
                 @media (max-width: 992px) {
                     text-align: center;
 
@@ -285,6 +285,7 @@ body{
             padding: 5rem 2rem;
             background-color: $color-blanco;
             text-align: center;
+            width: 100%;
 
             h3{
                 color: $color-negro;
@@ -310,12 +311,22 @@ body{
                 gap: 2rem;
                 justify-content: center;
                 max-width: 1200px;
+                width: 100%;
                 margin: 0 auto;
-                margin-bottom: 2rem;            
+                margin-bottom: 2rem;
+                align-items: stretch; 
+                
+                //ADAPTACION MOVIL Y TABLET
+                @media (max-width: 992px) {
+                    grid-template-columns: repeat(2, 1fr);
+                }
 
                 div.cards-item{
+                    align-content: center;
+                    justify-content: flex-start;
+                    height: 100%;
                     display: grid;
-                    align-content: space-between;
+                    align-content: start;
                     background-color: white;
                     padding: 1rem;
                     border-radius: 10px;
@@ -332,6 +343,8 @@ body{
                         margin: 2rem 0 1rem 0;
                         font-size: large;
                         font-weight: 500;
+                        text-align: center;
+                        display: flex;
                     }
 
                 }
@@ -384,41 +397,51 @@ body{
             padding: 5rem 2rem;
 
             .container-testimonios {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                align-items: center;
-                gap: 3rem;
                 max-width: 1200px;
                 margin: 0 auto;
-            
+                display: grid;
+                grid-template-columns: 1fr 1fr;   
+                gap: 3rem;
+                align-items: start;
+
+                //ADAPTACION MOVIL Y TABLET 
+
+                @media (max-width: 600px) {
+                    grid-template-columns: 1fr;
+                    gap: 2rem;
+                    text-align: center;
+                }
 
                 .carousel-col {
-                    div.carousel-fade{
+                    .carousel{
+                        border-radius: 16px;
+                        overflow: hidden;
+                        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+                        background: white;
+
                         div.carousel-item{
                             transition: opacity 0.8s ease-in-out;
                         }
+                        .card-testimonio {
+                            background-color: $color-blanco;
+                            padding: 2rem;
+                            border-radius: 10px;
+                            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+                            text-align: left;
+                            max-height: 570px;
 
-                    }
-                    
-                    .card-testimonio {
-                        background-color: $color-blanco;
-                        padding: 2rem;
-                        border-radius: 10px;
-                        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
-                        text-align: left;
-                        max-height: 570px;
+                            .foto-testimonio {
+                                width: 100%;
+                                border-radius: 8px;
+                                margin-bottom: 1rem;
+                            }
 
-                        .foto-testimonio {
-                            width: 100%;
-                            border-radius: 8px;
-                            margin-bottom: 1rem;
-                        }
-
-                        blockquote {
-                            font-style: italic;
-                            color: $color-negro;
-                            margin-bottom: 1rem;
-                        }
+                            blockquote {
+                                font-style: italic;
+                                color: $color-negro;
+                                margin-bottom: 1rem;
+                            }
+                        }                   
                         
                         h4 {
                             font-weight: 700;
