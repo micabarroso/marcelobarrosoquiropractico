@@ -54,7 +54,7 @@ body header nav ul li a.nav-links:hover {
   }
   body header nav ul.nav-links {
     flex-direction: column;
-    margin: 1rem 1rem 5rem 0rem;
+    margin: 1rem 1rem 0rem 0rem;
     text-align: center;
     gap: 1rem;
   }
