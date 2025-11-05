@@ -794,7 +794,7 @@ body main section.ubicacion-section div.ubicacion-grid div.ubicacion-item div.ma
   border: 0;
   border-radius: 8px;
 }
-@media (max-width: 430px) {
+@media (max-width: 992px) {
   body main section.ubicacion-section {
     padding: 3rem 1rem;
   }
