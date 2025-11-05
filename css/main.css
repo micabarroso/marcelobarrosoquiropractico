@@ -40,7 +40,7 @@ body header nav ul li a.nav-links {
 body header nav ul li a.nav-links:hover {
   color: #d88c21 !important;
 }
-@media (max-width: 430px) {
+@media (max-width: 992px) {
   body header {
     position: static;
   }
